@@ -1,10 +1,10 @@
 /*=============== Font Family ===============*/
-@font-face {
+@font-face{
     src: url("../src/assets/font/Pangolin/Pangolin-Regular.ttf");
     font-family: Pangolin;
 }
 /*=============== Variables CSS ===============*/
-:root {
+:root{
     --header-height: 3.5rem;
     --transition: .3s;
     /*========== Colors ==========*/
@@ -40,7 +40,7 @@
     --border-width: 1px;
 }
 @media screen and (min-width: 968px) {
-:root {
+:root{
     --biggest-font-size: 2.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -108,21 +108,21 @@ textarea{
     max-height: 180px;
 }
 /*=============== FREAMWORK => REUSABLE CSS CLASSES ===============*/
-.d-grid {
+.d-grid{
     display: grid;
 }
 .d-flex{
     display: flex;
 }
-.section {
+.section{
     padding: 6.5rem 0 1rem;
 }
-.border-thick {
+.border-thick{
     border-width: calc(var(--border-width) + 1px);
     border-color: var(--border-color);
     border-style: solid;
 }
-.border-light {
+.border-light{
     border-width: var(--border-width);
     border-color: var(--border-color);
     border-style: solid;

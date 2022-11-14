@@ -1,0 +1,59 @@
+/*=============== FreamWork ===============*/
+.container{
+    max-width: 1024px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+@media screen and (max-width: 320px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+}
+@media screen and (min-width: 1024px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*--- Here maybe these breakpoints help you ---*/
+/* @media (min-width: 1024px) and (max-width: 1200px){
+    .container {
+    padding-left: 11px;
+    padding-right: 11px;
+    }
+} */
+/*--- Here if you want this style for container than frist one ---*/
+/* .container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+/*
+/* maxMobile */
+/* @media (max-width: 767px){
+    .containe{
+        width: 100%;
+    }
+} */
+/* minSmall */
+/* @media (min-width: 768px){
+    .containe {
+        width: 750px;
+    }
+} */
+/* minMedium */
+/* @media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+} */
+/* minLarge */
+/* @media (min-width: 1200px){
+    .containe {
+        width: 1170px;
+    }
+} */
+
+

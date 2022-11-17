@@ -1,9 +1,10 @@
 import './Home.css';
+// import {MainTitle} from '../../components/index'
 
 const Home = () => {
   return (
     <>
-    Home
+    hi
     </>
   )
 }

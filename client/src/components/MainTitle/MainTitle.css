@@ -22,8 +22,7 @@
     -o-transform: translate(-50%, -50%);
 }
 .main-title h2 {
-    color: var(--border-color);
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
 }
 /* maxSmall */
 @media (max-width: 767px) {

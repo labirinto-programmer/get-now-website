@@ -1,18 +1,10 @@
 import './Home.css';
-import {MainTitle} from '../../components/index'
+// import {MainTitle} from '../../components/index'
 
 const Home = () => {
   return (
     <>
-    <MainTitle>
-      order your favorites
-    </MainTitle>
-    <MainTitle>
-      browse by category
-    </MainTitle>
-    <MainTitle>
-      contact us
-    </MainTitle>
+    hi
     </>
   )
 }

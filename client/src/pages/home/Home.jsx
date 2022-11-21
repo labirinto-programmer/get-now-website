@@ -1,10 +1,11 @@
 import './Home.css';
+import { Container } from '../../components/index';
 
 const Home = () => {
   return (
-    <>
-    Home
-    </>
+    <Container>
+      
+    </Container>
   )
 }
 

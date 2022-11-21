@@ -1,11 +1,10 @@
 import './Home.css';
-// import {MainTitle} from '../../components/index'
 
 const Home = () => {
   return (
-    <>
-    hi
-    </>
+    <div>
+      hello
+    </div>
   )
 }
 

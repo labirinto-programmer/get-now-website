@@ -29,22 +29,22 @@ const NavBar = () => {
         </ul> 
       </div>
       <div className="nav-icons">
-          <NavLink to='/cart' className='heart-icon'>
+          <Link to='/cart' className='heart-icon'>
             <img className="nav-icon" src={HeartIcon} alt="" />
             <span className='heart-notification'></span>
-          </NavLink>
-          <NavLink to='/cart' className='cart-icon'>
+          </Link>
+          <Link to='/cart' className='cart-icon'>
             <img className="nav-icon" src={CartIcon} alt="" />
             <span className='cart-badge'>0</span>
-          </NavLink>
-          <NavLink to='/login'>
+          </Link>
+          <Link to='/login'>
             <img className="nav-icon" src={UserIcon} alt="" />
-          </NavLink>
-          <NavLink onClick={() => setShowMenu(!showMenu)}>
+          </Link>
+          <Link onClick={() => setShowMenu(!showMenu)}>
           {
             showMenu ? <img className="nav-icon nav-toggle" src={CloseIcon} alt="" /> : <img className="nav-icon nav-toggle" src={MenuIcon} alt="" />
           }
-          </NavLink>
+          </Link>
       </div>
     </nav>
   )

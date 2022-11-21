@@ -11,7 +11,7 @@
     --first-color: hsl(29, 76%, 52%);
     --first-color-alt:hsl(29, 71%, 40%);
     --text-color: hsl(0, 0%, 100%);
-    --body-color: hwb(0 15% 85%);
+    --body-color: #323232;
     --border-color: hsl(0, 0%, 100%);
     /*========== Font and typography ==========*/
     --body-font: Pangolin, cursive;
@@ -25,14 +25,22 @@
     /*========== Font weight ==========*/
     --font-medium: 400;
     --font-bold: 700;
-    /*========== Margenes Bottom ==========*/
-    --mb-0-5: .5rem;
-    --mb-0-75: .75rem;
-    --mb-1: 1rem;
-    --mb-1-5: 1.5rem;
-    --mb-2: 2rem;
-    --mb-2-5: 2.5rem;
-    --mb-3: 3rem;
+    /*========== Margenes ==========*/
+    --m-0-5: .5rem;
+    --m-0-75: .75rem;
+    --m-1: 1rem;
+    --m-1-5: 1.5rem;
+    --m-2: 2rem;
+    --m-2-5: 2.5rem;
+    --m-3: 3rem;
+    /*========== Padding ==========*/
+    --p-0-5: .5rem;
+    --p-0-75: .75rem;
+    --p-1: 1rem;
+    --p-1-5: 1.5rem;
+    --p-2: 2rem;
+    --p-2-5: 2.5rem;
+    --p-3: 3rem;
     /*========== Z Index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;

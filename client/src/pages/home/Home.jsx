@@ -1,10 +1,10 @@
 import './Home.css';
-// import {MainTitle} from '../../components/index'
+import {Food} from '../../sections/index';
 
 const Home = () => {
   return (
     <>
-    hi
+      <Food/>
     </>
   )
 }

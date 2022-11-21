@@ -29,7 +29,7 @@ const NavBar = () => {
         </ul> 
       </div>
       <div className="nav-icons">
-          <Link to='/cart' className='heart-icon'>
+          <Link to='/favorite' className='heart-icon'>
             <img className="nav-icon" src={HeartIcon} alt="" />
             <span className='heart-notification'></span>
           </Link>

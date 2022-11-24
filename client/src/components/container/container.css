@@ -16,6 +16,12 @@
         margin-right: auto;
     }
 }
+@media (min-width: 1024px) and (max-width: 1200px){
+    .container {
+    padding-left: 11px;
+    padding-right: 11px;
+    }
+}
 /*--- Here maybe these breakpoints help you ---*/
 /* @media (min-width: 1024px) and (max-width: 1200px){
     .container {

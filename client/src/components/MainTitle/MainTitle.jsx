@@ -10,4 +10,4 @@ const MainTitle = (props) => {
     )
 }
 
-export default MainTitle
+export default MainTitle;

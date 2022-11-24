@@ -17,7 +17,7 @@ import data from "../../data/food.json";
 const Food = () => {
     return (
         <>
-        <section className='food'>
+        <section className='food section'>
             <MainTitle>
                 foods
             </MainTitle>

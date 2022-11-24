@@ -1,18 +1,19 @@
-import './Food.css';
 import { NavLink } from "react-router-dom";
 
 import {MainTitle} from '../../components/index';
 import {Container} from '../../components/index';
 import {Card} from '../../components/index';
-import {ButtonCard, ButtonCardSelect} from '../../components/index';
+import {BtnPrimary, BtnSecondary} from '../../components/index';
 import {getImg} from '../../utils/helper';
 
 import arrowleft from '../../assets/image/arrow-left.png';
 import arrowright from '../../assets/image/arrow-right.png';
 
-import {nums} from "../../data/info.jsx";
-import {lists} from "../../data/info.jsx";
+import {nums} from "../../data/dataInfo.jsx";
+import {lists} from "../../data/dataInfo.jsx";
 import data from "../../data/food.json";
+
+import './Food.css';
 
 const Food = () => {
     return (
@@ -58,29 +59,26 @@ const Food = () => {
                                             <span>
                                                 {item.price}
                                             </span>
-                                            <ButtonCard path={item.id}>
-                                                add to cart
-                                            </ButtonCard>
+                                            <BtnPrimary path={item.id} title='add to cart'>
+                                            </BtnPrimary>
                                         </div>
                                     </Card>
                                 })
                             }
                         </div>
                         <div className='food-btns d-flex'>
-                            <ButtonCardSelect>
-                                <img src={arrowright} alt={arrowright} />
-                            </ButtonCardSelect>
+                            <BtnSecondary title=<img src={arrowright} alt={arrowright} />>
+                            </BtnSecondary>
                             {nums.map((item, index) => {
                                 return(
-                                    <ButtonCardSelect key={index}
+                                    <BtnSecondary key={index}
                                     className={({isActive}) => isActive ? 'active' : 'k'}
-                                    path={item.path}>{item.num}</ButtonCardSelect>
+                                    path={item.path} title={item.num}></BtnSecondary>
                                 )
                                 })
                             }
-                            <ButtonCardSelect>
-                                <img src={arrowleft} alt={arrowleft} />
-                            </ButtonCardSelect>
+                            <BtnSecondary title=<img src={arrowleft} alt={arrowleft} />>
+                            </BtnSecondary>
                         </div>
                     </div>
                 </div>

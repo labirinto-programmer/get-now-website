@@ -26,9 +26,7 @@
 }
 /* maxSmall */
 @media (max-width: 767px) {
-    .main-title {
-        margin-bottom: calc(var(--m-1-5) * 3);
-    }
+    
     .main-title::after {
         width: 70%;
         height: 70%;

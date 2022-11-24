@@ -1,7 +1,6 @@
 .btn-card {
-    all: unset;
-    padding: calc(var(--p-0-75) - 6px) calc(var(--p-0-75) - 4px);
     background-color: var(--first-color);
+    padding: calc(var(--p-0-75) - 6px) calc(var(--p-0-75) - 4px);
     border-radius: var(--border-radius);
     -webkit-border-radius: var(--border-radius);
     -moz-border-radius: var(--border-radius);
@@ -31,8 +30,8 @@
 }
 .food-btns a {
     color: var(--text-color);
-    padding: calc(var(--p-0-75) - 10px) calc(var(--p-0-75) - 4px);
     background-color: transparent;
+    padding: calc(var(--p-0-75) - 10px) calc(var(--p-0-75) - 4px);
     border-radius: var(--border-radius);
     -webkit-border-radius: var(--border-radius);
     -moz-border-radius: var(--border-radius);

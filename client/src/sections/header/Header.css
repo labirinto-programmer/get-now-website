@@ -1,0 +1,11 @@
+/*=============== HEADER ===============*/
+.header{
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    height: calc(var(--header-height) + 1rem);
+    line-height: 100px;
+}

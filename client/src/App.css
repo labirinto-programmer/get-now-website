@@ -46,6 +46,7 @@
     --z-fixed: 100;
     /*========== Border ==========*/
     --border-width: 1px;
+    --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
 }
 @media screen and (min-width: 968px) {
 :root{
@@ -77,6 +78,7 @@ body{
     font-size: var(--normal-font-size);
     text-transform: capitalize;
     letter-spacing: 2px;
+    line-height: 1.6;
 }
 h1,h2,h3,h4{
     color: var(--first-color);

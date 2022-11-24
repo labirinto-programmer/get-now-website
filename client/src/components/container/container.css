@@ -1,19 +1,25 @@
 /*=============== FreamWork ===============*/
 .container{
     max-width: 1024px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    margin-left: var(--m-1-5);
+    margin-right: var(--m-1-5);
 }
 @media screen and (max-width: 320px){
     .container{
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
+        margin-left: var(--m-1);
+        margin-right: var(--m-1);
     }
 }
 @media screen and (min-width: 1024px){
     .container{
         margin-left: auto;
         margin-right: auto;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+    .container {
+    padding-left: 11px;
+    padding-right: 11px;
     }
 }
 /*--- Here maybe these breakpoints help you ---*/

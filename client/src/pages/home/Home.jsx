@@ -1,10 +1,11 @@
+import {Hero} from '../../sections/index';
 import './Home.css';
 
 const Home = () => {
   return (
-    <div>
-      hello
-    </div>
+    <>
+      <Hero/>
+    </>
   )
 }
 

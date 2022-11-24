@@ -1,20 +1,13 @@
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Button.css';
 
-const ButtonCard = (props) => {
+export const BtnPrimary = (props) => {
     return (
-        <Link className='btn-card' exact="true" to={props.path}>
-            {props.children}
-        </Link>
+        <Link className='btn btn-primary'>{props.title}</Link>
     )
 }
-const ButtonCardSelect = (props) => {
+export const BtnSecondary = (props) => {
     return (
-        <NavLink className='border-light' exact="true" to={props.path}>
-            {props.children}
-        </NavLink>
+        <Link className='btn btn-secondary'>{props.title}</Link>
     )
 }
-
-export default ButtonCard
-export {ButtonCardSelect}

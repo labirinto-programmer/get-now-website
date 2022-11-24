@@ -4,7 +4,7 @@ import {MainTitle} from '../../components/index';
 import {Container} from '../../components/index';
 import {Card} from '../../components/index';
 import {BtnPrimary, BtnSecondary} from '../../components/index';
-import {getImg} from '../../utils/helper';
+import {getImg} from '../../utils/Helper';
 
 import arrowleft from '../../assets/image/arrow-left.png';
 import arrowright from '../../assets/image/arrow-right.png';

@@ -1,0 +1,55 @@
+.btn-card {
+    background-color: var(--first-color);
+    padding: calc(var(--p-0-75) - 6px) calc(var(--p-0-75) - 4px);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.btn-card:hover {
+    cursor: pointer;
+    background-color: var(--first-color-alt);
+}
+.btn-card {
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.food-btns {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: calc(var(--m-3) + 32px) auto 0;
+}
+.food-btns a {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: calc(var(--p-0-75) - 10px) calc(var(--p-0-75) - 4px);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.food-btns a:hover {
+    cursor: pointer;
+    background-color: var(--first-color-alt);
+}
+.food-btns a.active {
+    background-color: var(--first-color);
+}
+.food-btns a img {
+    width: 40px;
+}

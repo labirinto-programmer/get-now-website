@@ -644,29 +644,6 @@
 		]
 	},
 	{
-		"id": 28,
-		"foodName": "oats",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic dignissimos.",
-		"imagePath": "../assets/image/image28.png",
-		"popularity": 12852,
-		"voteAverage": 7.2,
-		"releaseDate": "2011-03-10",
-		"kind": ["small", "medium", "large"],
-		"flavor": ["bannana", "honey", "sugar", "without flavor", "cream", "strawberry", "fanela", "chocolate"],
-		"category": "dessert",
-		"price": "$5",
-		"customerOpinion": [
-			"good", "not bad",
-			"fabulous", 
-			"i don't like it", 
-			"delicious", 
-			"strong", 
-			"favorite", 
-			"the flavor is strange", 
-			"the flavor is strong"
-		]
-	},
-	{
 		"id": 29,
 		"foodName": "waffle",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic dignissimos.",

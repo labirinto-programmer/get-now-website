@@ -127,4 +127,22 @@ export const footerContact = [
             },
         ],
     }
-]
+];
+export const servicesInfo = [
+    {
+        name: "Fast Delivery",
+        image: "../assets/image/truck-icon.png"
+    },
+    {
+        name: "Best Quality",
+        image: "../assets/image/best-icon.png"
+    },
+    {
+        name: "Fresh Food",
+        image: "../assets/image/food-icon.png"
+    },
+    {
+        name: "24/7 Support",
+        image: "../assets/image/supporter-icon.png"
+    }
+];

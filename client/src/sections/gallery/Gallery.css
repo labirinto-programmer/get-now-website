@@ -1,8 +1,3 @@
-.gallery {
-    background-image: url("../../assets/image/frist-backgrond.png");
-    background-position: center;
-    background-size: cover;
-}
 .gallery-data .gallery-menu {
     padding: 0 var(--p-1);
     grid-template-columns: repeat(5, 1fr);

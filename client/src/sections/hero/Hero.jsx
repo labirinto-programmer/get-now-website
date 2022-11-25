@@ -1,7 +1,7 @@
 import {NavLink} from 'react-router-dom';
 import {Container} from '../../components/index';
 import {BtnPrimary, BtnSecondary} from '../../components/index';
-import {getImg} from '../../utils/Helper'
+import {getImg} from '../../utils/Helper';
 import {heroInfo} from '../../data/dataInfo';
 import heroImg from '../../assets/image/hero-img.png';
 import './Hero.css';

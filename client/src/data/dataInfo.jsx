@@ -74,3 +74,25 @@ export const heroInfo = [
     image: "../assets/image/snapchat-icon.png"
     }
 ]
+export const gallery = [
+    {
+        name: "breakfast",
+        path: "../assets/image/breakfast-sandwich.png"
+    },
+    {
+        name: "lunch",
+        path: "../assets/image/burgers.png"
+    },
+    {
+        name: "dinner",
+        path: "../assets/image/dinner.png"
+    },
+    {
+        name: "drink",
+        path: "../assets/image/drink.png"
+    },
+    {
+        name: "dessert",
+        path: "../assets/image/pastries.png"
+    }
+]

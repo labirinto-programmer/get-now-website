@@ -1,27 +1,19 @@
 import { NavLink } from "react-router-dom";
-
-import {MainTitle} from '../../components/index';
-import {Container} from '../../components/index';
-import {Card} from '../../components/index';
+import {MainHeading, Container, Card} from '../../components/index';
 import {BtnPrimary, BtnSecondary} from '../../components/index';
 import {getImg} from '../../utils/Helper';
-
 import arrowleft from '../../assets/image/arrow-left.png';
 import arrowright from '../../assets/image/arrow-right.png';
-
-import {nums} from "../../data/dataInfo.jsx";
-import {lists} from "../../data/dataInfo.jsx";
+import {nums, lists} from "../../data/dataInfo.jsx";
 import data from "../../data/food.json";
-
 import './Food.css';
 
 const Food = () => {
     return (
         <>
         <section className='food section'>
-            <MainTitle>
-                foods
-            </MainTitle>
+            <MainHeading title='foods'>
+            </MainHeading>
             <Container>
                 <div className='food-data d-flex'>
                     <div className='food-list'>

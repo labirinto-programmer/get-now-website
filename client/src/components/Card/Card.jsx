@@ -8,4 +8,4 @@ const CardFood = (props) => {
     )
 }
 
-export default CardFood
+export default CardFood;

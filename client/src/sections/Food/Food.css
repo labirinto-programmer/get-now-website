@@ -81,7 +81,7 @@
     -o-transition: var(--transition);
 }
 @media (max-width: 767px) {
-    .food-data .food-list ul li {
+    .food-data .food-list ul a {
         width: 40%;
     }
 }

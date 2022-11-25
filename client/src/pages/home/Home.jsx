@@ -1,5 +1,4 @@
-import {Hero} from '../../sections/index';
-import {Food} from '../../sections/index';
+import {Hero, Food, Gallery} from '../../sections/index';
 import './Home.css';
 
 const Home = () => {
@@ -7,6 +6,7 @@ const Home = () => {
     <>
       <Hero/>
       <Food/>
+      <Gallery/>
     </>
   )
 }

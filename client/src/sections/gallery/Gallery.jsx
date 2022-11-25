@@ -6,7 +6,7 @@ import './Gallery.css';
 
 const Gallery = () => {
     return (
-        <div className='gallery section'>
+        <section className='gallery section'>
             <MainHeading title='gallery'>
             </MainHeading>
             <div className='gallery-data'>
@@ -24,7 +24,7 @@ const Gallery = () => {
                 <BtnPrimary title='view all'>
                 </BtnPrimary>
             </div>
-        </div>
+        </section>
     )
 }
 

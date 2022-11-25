@@ -15,7 +15,7 @@ export const links = [
     name: "Contact",
     path: "/contact"
     }
-]
+];
 export const nums = [
     {
         num: "1",
@@ -29,7 +29,7 @@ export const nums = [
         num: "3",
         path: "/3"
     }
-]
+];
 export const lists = [
     {
         name: "breakfast",
@@ -73,7 +73,7 @@ export const heroInfo = [
     link: "https://snapchat.com/",
     image: "../assets/image/snapchat-icon.png"
     }
-]
+];
 export const gallery = [
     {
         name: "breakfast",
@@ -95,4 +95,22 @@ export const gallery = [
         name: "dessert",
         path: "../assets/image/pastries.png"
     }
-]
+];
+export const servicesInfo = [
+    {
+        name: "Fast Delivery",
+        image: "../assets/image/truck-icon.png"
+    },
+    {
+        name: "Best Quality",
+        image: "../assets/image/best-icon.png"
+    },
+    {
+        name: "Fresh Food",
+        image: "../assets/image/food-icon.png"
+    },
+    {
+        name: "24/7 Support",
+        image: "../assets/image/supporter-icon.png"
+    }
+];

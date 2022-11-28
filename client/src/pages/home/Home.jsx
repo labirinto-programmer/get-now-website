@@ -1,4 +1,4 @@
-import {Hero, Food, Services, Gallery} from '../../sections/index';
+import {Hero, Services, Food, Gallery, NewsLetter} from '../../sections/index';
 import './Home.css';
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
       <Services/>
       <Food/>
       <Gallery/>
+      <NewsLetter/>
     </>
   )
 }

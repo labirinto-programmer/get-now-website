@@ -14,6 +14,7 @@
     --body-color: #323232;
     --border-color: hsl(0, 0%, 100%);
     --card-color: rgba(225, 225, 225, 0.1);
+    --input-color: hsl(0, 0%, 96%);
     /*========== Font and typography ==========*/
     --body-font: Pangolin, cursive;
     --biggest-font-size: 2rem;
@@ -48,6 +49,7 @@
     /*========== Border ==========*/
     --border-width: 1px;
     --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+    --border-radius-sumite:  95% 4% 97% 5%/0 94% 3% 95%;
 }
 @media screen and (min-width: 968px) {
 :root {

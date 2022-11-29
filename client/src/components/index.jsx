@@ -4,3 +4,4 @@ export {default as Card} from './card/Card';
 export {BtnPrimary, BtnSecondary} from './button/Button';
 export {default as NavBar} from './navbar/NavBar';
 export {default as GalleryCard} from './galleryCard/GalleryCard';
+export {default as NumbersBtn} from './numbersBtn/NumbersBtn';

@@ -21,7 +21,7 @@ const Gallery = () => {
                     })
                     }
                 </div>
-                <BtnPrimary title='view all'>
+                <BtnPrimary title='view all' path='/all'>
                 </BtnPrimary>
             </div>
         </section>

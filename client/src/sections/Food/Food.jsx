@@ -1,10 +1,7 @@
-import { NavLink } from "react-router-dom";
-import {MainHeading, Container, Card} from '../../components/index';
-import {BtnPrimary, BtnSecondary} from '../../components/index';
+import {NavLink} from "react-router-dom";
+import {MainHeading, Container, Card, BtnPrimary, NumbersBtn} from '../../components/index';
 import {getImg} from '../../utils/Helper';
-import arrowleft from '../../assets/image/arrow-left.png';
-import arrowright from '../../assets/image/arrow-right.png';
-import {nums, lists} from "../../data/dataInfo.jsx";
+import {lists} from "../../data/dataInfo.jsx";
 import data from "../../data/food.json";
 import './Food.css';
 
@@ -21,15 +18,16 @@ const Food = () => {
                             categories
                         </h3>
                         <ul className='d-flex'>
-                            {lists.map((item, index) => {
-                                return (
-                                    <NavLink key={index} className={({ isActive }) =>
-                                    isActive ? 'd-flex border-light active' : 'd-flex border-light'}
-                                    to={item.name}>
-                                    {getImg(item.path)}
-                                    {item.name}</NavLink>
-                                )
-                            })
+                            {
+                                lists.map((item, index) => {
+                                    return (
+                                        <NavLink key={index} className={({ isActive }) =>
+                                        isActive ? 'd-flex border-light active' : 'd-flex border-light'}
+                                        to={item.name}>
+                                        {getImg(item.path)}
+                                        {item.name}</NavLink>
+                                    )
+                                })
                             }
                         </ul>
                     </div>
@@ -51,27 +49,13 @@ const Food = () => {
                                             <span>
                                                 {item.price}
                                             </span>
-                                            <BtnPrimary path={item.id} title='add to cart'>
-                                            </BtnPrimary>
+                                            <BtnPrimary path={item.id} title='add to cart' />
                                         </div>
                                     </Card>
                                 })
                             }
                         </div>
-                        <div className='food-btns d-flex'>
-                            <BtnSecondary title=<img src={arrowright} alt={arrowright} />>
-                            </BtnSecondary>
-                            {nums.map((item, index) => {
-                                return(
-                                    <BtnSecondary key={index}
-                                    className={({isActive}) => isActive ? 'active' : 'k'}
-                                    path={item.path} title={item.num}></BtnSecondary>
-                                )
-                                })
-                            }
-                            <BtnSecondary title=<img src={arrowleft} alt={arrowleft} />>
-                            </BtnSecondary>
-                        </div>
+                        <NumbersBtn />
                     </div>
                 </div>
             </Container>

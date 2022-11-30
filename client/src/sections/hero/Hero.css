@@ -1,5 +1,5 @@
 .hero-container {
-    padding: 5.5rem 0 2rem;
+    padding: var(--fixed-padding);
     row-gap: 90px;
 }
 @media (max-width: 767px) {

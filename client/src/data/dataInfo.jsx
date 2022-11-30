@@ -146,3 +146,8 @@ export const servicesInfo = [
         image: "../assets/image/supporter-icon.png"
     }
 ];
+export const selectInfo = [
+    {
+        op: ["latest", "popularity", "favorite"]
+    }
+];

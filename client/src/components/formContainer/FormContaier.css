@@ -1,6 +1,6 @@
 .login-singup-container{
     padding: 5.5rem 0 2rem;
-    width: 50%;
+    width: 46%;
     margin: 0 auto;
 }
 @media (max-width: 991px) {
@@ -27,4 +27,8 @@
     .form-container{
         width: 56%;
     }
+}
+.form{
+    margin-top: var(--m-2-5);
+    margin-bottom: var(--m-2);
 }

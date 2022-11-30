@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import {Container, BtnForm, FormInput, MainHeadForm, FormContaier} from '../../components/index';
+import {Container, BtnForm, FormInput, MainHeadForm, FormContaier, FormLink} from '../../components/index';
 import './Login.css';
 
 const Login = () => {
@@ -23,9 +23,7 @@ const Login = () => {
               </div>
               <BtnForm title="Login"/>
             </form>
-            <span>
-              Don't have an account?<Link className="signup-link" to="/register"> SingUp</Link>
-            </span>
+            <FormLink text="Don't have an account?" to="/register" title="SingUp" />
           </FormContaier>
         </Container>
     </section>

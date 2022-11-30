@@ -33,7 +33,7 @@
     -o-border-radius: var(--border-radius);
 }
 .subscribe-box input[type="search"]::placeholder {
-    color: rgba(255, 255, 255, 0.669);
+    color: var(--input-placeholder-color);
 }
 .subscribe-box input[type="submit"] {
     text-transform: uppercase;
@@ -54,11 +54,4 @@
     -moz-border-radius: var(--border-radius-sumite);
     -ms-border-radius: var(--border-radius-sumite);
     -o-border-radius: var(--border-radius-sumite);
-}
-/*========== Group Styles ==========*/
-.subscribe-box input[type="search"] ,
-.subscribe-box input[type="submit"] {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    letter-spacing: 1px;
 }

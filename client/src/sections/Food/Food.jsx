@@ -49,8 +49,7 @@ const Food = () => {
                                             <span>
                                                 {item.price}
                                             </span>
-                                            <BtnPrimary path={item.id} title='add to cart'>
-                                            </BtnPrimary>
+                                            <BtnPrimary path={item.id} title='add to cart' />
                                         </div>
                                     </Card>
                                 })

@@ -148,6 +148,6 @@ export const servicesInfo = [
 ];
 export const selectInfo = [
     {
-        op: ["latest", "popularity"]
+        op: ["latest", "popularity", "favorite"]
     }
 ];

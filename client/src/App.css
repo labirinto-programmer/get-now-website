@@ -43,6 +43,7 @@
     --p-2: 2rem;
     --p-2-5: 2.5rem;
     --p-3: 3rem;
+    --fixed-padding: 5.5rem 0 2rem;
     /*========== Z Index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;

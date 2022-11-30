@@ -55,22 +55,22 @@ export const lists = [
 export const heroInfo = [
     {
         name: "instagram",
-        link: "https://www.instagram.com/",
+        path: "https://www.instagram.com/",
         image: "../assets/image/instagram-icon.png",
     },
     {
         name: "twitter",
-        link: "https://twitter.com/",
+        path: "https://twitter.com/",
         image: "../assets/image/twiter-icon.png",
     },
     {
         name: "whatsapp",
-        link: "https://web.whatsapp.com//",
+        path: "https://web.whatsapp.com//",
         image: "../assets/image/whatsupp-icon.png",
     },
     {
         name: "snapchat",
-        link: "https://snapchat.com/",
+        path: "https://snapchat.com/",
         image: "../assets/image/snapchat-icon.png",
     },
 ];

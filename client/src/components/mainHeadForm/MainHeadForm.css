@@ -1,0 +1,7 @@
+.head-form-title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--m-0-5);
+}
+.head-form-description{
+    font-size: var(--small-font-size);
+}

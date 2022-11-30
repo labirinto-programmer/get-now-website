@@ -11,3 +11,8 @@ export const BtnSecondary = (props) => {
         <Link className='btn btn-secondary'>{props.title}</Link>
     )
 }
+export const BtnForm = (props) => {
+    return (
+        <input type="submit" value={props.title} className='btn btn-primary form-btn' />
+    )
+}

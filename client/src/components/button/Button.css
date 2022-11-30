@@ -37,3 +37,9 @@
 .food-btns a img {
     width: 40px;
 }
+.form-btn{
+    display: block;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}

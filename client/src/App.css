@@ -132,6 +132,9 @@ input {
     letter-spacing: 1px;
     color: var(--input-color);
 }
+input[type='submit'] {
+    cursor: pointer;
+}
 button {
     all: unset;
     border: none;
@@ -143,6 +146,8 @@ select {
 }
 textarea {
     resize: none;
+    outline: none;
+    border: none;
     font-family: var(--body-font);
     font-size: var(--h3-font);
     max-height: 180px;
@@ -154,7 +159,7 @@ textarea {
 .d-flex{
     display: flex;
 }
-.section{
+.section {
     padding: 6.5rem 0 1rem;
 }
 .border-thick {

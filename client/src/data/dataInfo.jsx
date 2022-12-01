@@ -151,3 +151,17 @@ export const selectInfo = [
         op: ["latest", "popularity", "favorite"]
     }
 ];
+export const contactInfo = [
+    {
+        text: "+012-855-6251",
+        image: "../assets/image/phone.png.png"
+    },
+    {
+        text: "mail@example.com",
+        image: "../assets/image/email.png"
+    },
+    {
+        text: "501 e capitol st se, washington, dc 20003",
+        image: "../assets/image/location.png"
+    }
+];

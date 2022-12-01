@@ -27,3 +27,9 @@
 .btn-secondary:hover {
     background-color: var(--first-color);
 }
+.form-btn {
+    display: block;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}

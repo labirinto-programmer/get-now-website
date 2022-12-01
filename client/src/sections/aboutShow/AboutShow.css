@@ -1,0 +1,70 @@
+.about-show .about-box {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6%;
+}
+.about-show .about-box .about-description {
+    width: 40%;
+}
+@media (max-width: 767px) {
+    .about-show .about-box .about-description {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-show .about-box .about-description {
+        width: 44%;
+    }
+}
+.about-show .about-box .about-description p {
+    font-size: var(--normal-font-size);
+    margin: var(--m-0-75) auto;
+}
+.about-show .about-box .about-description .description-img {
+    width: 60%;
+    margin: var(--m-3) auto;
+}
+.about-show .about-box .about-video {
+    width: 54%;
+}
+@media (max-width: 767px) {
+    .about-show .about-box .about-video {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-show .about-box .about-video {
+        width: 50%;
+    }
+}
+.about-show .about-box .about-video .vides-bcimg {
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    background-image: url('../../assets/image/tv.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+    .about-show .about-box .about-video .vides-bcimg {
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-show .about-box .about-video .vides-bcimg {
+        width: 320px;
+        height: 320px;
+    }
+}
+.about-show .about-box .about-video .vides-bcimg video {
+    width: 92%;
+    margin: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

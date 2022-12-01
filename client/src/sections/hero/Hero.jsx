@@ -21,7 +21,7 @@ const Hero = () => {
                         Qui magni delectus tenetur autem, sint veritatis!
                     </p>
                     <div className="hero-btns d-flex">
-                        <BtnPrimary title='order now'></BtnPrimary>
+                        <BtnPrimary title='order now' path='/all'></BtnPrimary>
                         <BtnSecondary title='go to'></BtnSecondary>
                     </div>
                     <div className="hero-social d-flex">

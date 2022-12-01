@@ -60,7 +60,7 @@ const Search = () => {
                                         <span>
                                             {item.price}
                                         </span>
-                                        <BtnPrimary path={item.id} title='add to cart' />
+                                        <BtnPrimary path='/cart' title='add to cart' />
                                     </div>
                                 </Card>
                             })

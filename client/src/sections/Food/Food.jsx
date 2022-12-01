@@ -9,7 +9,7 @@ const Food = () => {
     return (
         <>
         <section className='food section'>
-            <MainHeading title='foods'>
+            <MainHeading title='food'>
             </MainHeading>
             <Container>
                 <div className='food-data d-flex'>
@@ -49,7 +49,7 @@ const Food = () => {
                                             <span>
                                                 {item.price}
                                             </span>
-                                            <BtnPrimary path={item.id} title='add to cart' />
+                                            <BtnPrimary path='/details' title='read more' />
                                         </div>
                                     </Card>
                                 })

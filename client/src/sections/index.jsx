@@ -5,3 +5,5 @@ export {default as Food} from './food/Food';
 export {default as Gallery} from './gallery/Gallery';
 export {default as NewsLetter} from './newsletter/NewsLetter';
 export {default as Footer} from './footer/Footer';
+export {default as About} from './about/About';
+export {default as AboutShow} from './aboutShow/AboutShow';

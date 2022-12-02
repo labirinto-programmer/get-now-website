@@ -27,17 +27,7 @@
 .btn-secondary:hover {
     background-color: var(--first-color);
 }
-.food-btns {
-    width: 60%;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: calc(var(--m-3) + 32px) auto 0;
-}
-.food-btns a img {
-    width: 40px;
-}
-.form-btn{
+.form-btn {
     display: block;
     width: 70%;
     text-align: center;

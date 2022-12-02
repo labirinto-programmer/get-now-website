@@ -8,3 +8,5 @@ export {default as Footer} from './footer/Footer';
 export {default as Login} from './login/Login';
 export {default as Cart} from './cart/Cart';
 export {default as Total} from './total/Total';
+export {default as About} from './about/About';
+export {default as AboutShow} from './aboutShow/AboutShow';

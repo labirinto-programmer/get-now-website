@@ -1,0 +1,74 @@
+.contact .contact-content {
+    padding: var(--fixed-padding);
+}
+.contact .contact-content .contact-box {
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20%;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    .contact .contact-content .contact-box {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact .contact-content .contact-box {
+        width: 100%;
+        gap: 10%;
+    }
+}
+.contact .contact-content .contact-box .contact-social {
+    width: 40%;
+}
+@media (max-width: 767px) {
+    .contact .contact-content .contact-box .contact-social {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact .contact-content .contact-box .contact-social {
+        width: 45%;
+    }
+}
+.contact .contact-content .contact-box .contact-social .social-box {
+    align-items: center;
+    gap: 20px;
+    margin-bottom: var(--m-0-5);
+}
+.contact .contact-content .contact-box .contact-social .social-box .social-img {
+    width: 10%;
+}
+.contact .contact-content .contact-box .contact-form {
+    width: 40%;
+}
+@media (max-width: 767px) {
+    .contact .contact-content .contact-box .contact-form {
+        width: 100%;
+        margin-top: calc(var(--m-3) + var(--m-1));
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact .contact-content .contact-box .contact-form {
+        width: 45%;
+    }
+}
+.contact .contact-content .contact-box .contact-form .form-box {
+    flex-direction: column;
+    gap: 20px;
+}
+.contact .contact-content .contact-box .contact-form .form-box input:not(:last-of-type),
+.contact .contact-content .contact-box .contact-form .form-box textarea {
+    padding: var(--p-1) calc(var(--p-1-5) - 4px);
+    background-color: transparent;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+.contact .contact-content .contact-box .contact-form .form-box input::placeholder,
+.contact .contact-content .contact-box .contact-form .form-box textarea::placeholder {
+    text-transform: capitalize;
+}

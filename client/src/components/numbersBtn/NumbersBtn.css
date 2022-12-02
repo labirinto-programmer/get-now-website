@@ -1,0 +1,20 @@
+.numbers-btns {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: calc(var(--m-3) + 32px) auto 0;
+}
+@media (max-width: 767px) {
+    .numbers-btns {
+        width: 100%;
+    }
+}
+.numbers-btns a img {
+    width: 40px;
+}
+@media (max-width: 767px) {
+    .numbers-btns a img {
+        width: 30px;
+    }
+}

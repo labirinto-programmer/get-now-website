@@ -1,7 +1,7 @@
 import {Container, BtnForm} from '../../components/index';
 import {getImg} from '../../utils/Helper';
 import {contactInfo} from "../../data/dataInfo.jsx";
-import './Contact.css';
+import './ContactPage.css';
 
 const Contact = () => {
     return (

@@ -143,9 +143,12 @@ button {
     outline: none;
     cursor: pointer;
 }
-select{
+select {
+    all: unset;
     outline: none;
     appearance: none;
+}
+.cart-select {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -10,3 +10,4 @@ export {default as Cart} from './cart/Cart';
 export {default as Total} from './total/Total';
 export {default as About} from './about/About';
 export {default as AboutShow} from './aboutShow/AboutShow';
+export {default as Favorite} from './favorite/Favorite';

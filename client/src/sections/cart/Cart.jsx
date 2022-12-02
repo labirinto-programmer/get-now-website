@@ -24,7 +24,7 @@ const Cart = () => {
                     <td className='prodect-img'><img className='cart-img' src={CartImg} alt="img of prodect"/></td>
                     <td className='prodect-name' data-title='Name&#58;'>Product</td>
                     <td className='prodect-price' data-title='Price&#58;'>$50.00</td>
-                    <td className='prodect-quantity' data-title='Quantity&#58;'><select className="cart__nums border-light"><option>11</option></select></td>
+                    <td className='prodect-quantity' data-title='Quantity&#58;'><select className="cart__nums border-light cart-select"><option>11</option></select></td>
                     <td className='prodect-subtotal' data-title='sobtatle&#58;'>$12.00</td>
                     <td className='prodect-icon'><img className='cart-icon' src={CloseIcon} alt="img of prodect"/></td>
                   </tr>
@@ -32,7 +32,7 @@ const Cart = () => {
                     <td className='prodect-img'><img className='cart-img' src={CartImg} alt="img of prodect"/></td>
                     <td className='prodect-name' data-title='Name&#58;'>Product</td>
                     <td className='prodect-price' data-title='Price&#58;'>$50.00</td>
-                    <td className='prodect-quantity' data-title='Quantity&#58;'><select className="cart__nums border-light"><option>11</option></select></td>
+                    <td className='prodect-quantity' data-title='Quantity&#58;'><select className="cart__nums border-light cart-select"><option>11</option></select></td>
                     <td className='prodect-subtotal' data-title='sobtatle&#58;'>$12.00</td>
                     <td className='prodect-icon'><img className='cart-icon' src={CloseIcon} alt="img of prodect"/></td>
                   </tr>

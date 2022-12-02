@@ -1,0 +1,29 @@
+.form{
+    margin-top: var(--m-2-5);
+    margin-bottom: var(--m-2);
+}
+.signup-link{
+    color: var(--first-color);
+}
+.signup-link:hover{
+    color: var(--first-color-alt)
+}
+.forgot-password{
+    margin-bottom: var(--m-2);
+    text-align: right;
+}
+.forgot-password a {
+    color: var(--text-color);
+}
+.forgot-password a:hover {
+    color: var(--first-color-alt);
+}
+/*=============== Group Classes ===============*/
+.signup-link,
+.forgot-password{
+    transition: all var(--transition);
+    -webkit-transition: all var(--transition);
+    -moz-transition: all var(--transition);
+    -ms-transition: all var(--transition);
+    -o-transition: all var(--transition);
+}

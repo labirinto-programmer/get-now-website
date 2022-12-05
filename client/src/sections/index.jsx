@@ -7,3 +7,4 @@ export {default as NewsLetter} from './newsletter/NewsLetter';
 export {default as Footer} from './footer/Footer';
 export {default as About} from './about/About';
 export {default as AboutShow} from './aboutShow/AboutShow';
+export {default as Checkout} from './checkout/Checkout';

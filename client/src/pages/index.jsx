@@ -4,3 +4,4 @@ export {default as Login} from './login/Login';
 export {default as Register} from './register/Register';
 export {default as Contact} from './contact/Contact';
 export {default as AboutPage} from './aboutPage/AboutPage';
+export {default as CheckoutPage} from './checkoutPage/CheckoutPage';

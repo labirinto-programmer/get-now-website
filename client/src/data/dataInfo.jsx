@@ -165,3 +165,46 @@ export const contactInfo = [
         image: "../assets/image/location.png"
     }
 ];
+
+export const checkoutBoxInf = [
+    {
+        title: "First name",
+        for: "frist",
+        className: "checkout-box checkout-name"
+    },
+    {
+        title:"Last name",
+        for: "last",
+        className: "checkout-box checkout-name"
+    },
+    {
+        title:"Country",
+        for: "country",
+        className: "checkout-box"
+    },
+    {
+        title:"City",
+        for: "city",
+        className: "checkout-box"
+    },
+    {
+        title:"Street address",
+        for: "street",
+        className: "checkout-box"
+    },
+    {
+        title:"Postcode",
+        for: "postcode",
+        className: "checkout-box"
+    },
+    {
+        title:"Phone",
+        for: "phone",
+        className: "checkout-box"
+    },
+    {
+        title:"Email",
+        for: "email",
+        className: "checkout-box"
+    },
+]

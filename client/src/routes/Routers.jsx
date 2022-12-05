@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import {Home, Search, Login, Register, Contact, AboutPage} from '../pages/index';
+import {Home, Search, Login, Register, Contact, AboutPage, CheckoutPage} from '../pages/index';
 
 const Routers = () => {
         return (
@@ -12,6 +12,7 @@ const Routers = () => {
                         <Route path="/register" element={<Register />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/about" element={<AboutPage />} />
+                        <Route path="/checkout" element={<CheckoutPage/>} />
                 </Routes>
         )
 }

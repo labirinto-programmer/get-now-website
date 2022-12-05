@@ -90,7 +90,7 @@ html {
     background-color: var(--first-color);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--text-color);
+    background-color: var(--first-color-alt);
 }
 body {
     background-color: var(--body-color);
@@ -135,6 +135,14 @@ input {
 input[type='submit'] {
     cursor: pointer;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  appearance: textfield;
+}
 button {
     all: unset;
     border: none;
@@ -152,6 +160,9 @@ textarea {
     font-size: var(--h3-font);
     max-height: 180px;
 }
+abbr{
+    cursor: help;
+}
 /*=============== FREAMWORK => REUSABLE CSS CLASSES ===============*/
 .d-grid{
     display: grid;
@@ -162,6 +173,9 @@ textarea {
 .section {
     padding: 6.5rem 0 1rem;
 }
+.section-container{
+    padding: var(--fixed-padding);
+}
 .border-thick {
     border-width: calc(var(--border-width) + 1px);
     border-color: var(--border-color);
@@ -171,4 +185,13 @@ textarea {
     border-width: var(--border-width);
     border-color: var(--border-color);
     border-style: solid;
+}
+/*=============== Group Classes ===============*/
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb{
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
 }

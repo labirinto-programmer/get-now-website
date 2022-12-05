@@ -4,7 +4,7 @@ import {getImg} from '../../utils/Helper';
 import {selectInfo} from "../../data/dataInfo.jsx";
 import searchicon from '../../assets/image/search-icon.png';
 import data from "../../data/food.json";
-import './Search.css';
+import './SearchPage.css';
 
 const Search = () => {
     const [search, setSearch] = useState('');

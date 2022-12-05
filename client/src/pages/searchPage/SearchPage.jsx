@@ -4,7 +4,7 @@ import {getImg} from '../../utils/Helper';
 import {selectInfo} from "../../data/dataInfo.jsx";
 import searchicon from '../../assets/image/search-icon.png';
 import data from "../../data/food.json";
-import './Search.css';
+import './SearchPage.css';
 
 const Search = () => {
     const [search, setSearch] = useState('');
@@ -47,7 +47,7 @@ const Search = () => {
                                 : item.foodName.toLowerCase().includes(search);
                             }).slice(0, 16).map((item) => {
                                 return <Card key={item.id}>
-                                    <div className='food-img'>
+                                    <div className='card-img'>
                                         {getImg(item.imagePath)}
                                     </div>
                                     <h4>
@@ -56,7 +56,7 @@ const Search = () => {
                                     <p>
                                         {item.description}
                                     </p>
-                                    <div className='food-box d-flex'>
+                                    <div className='card-box d-flex'>
                                         <span>
                                             {item.price}
                                         </span>

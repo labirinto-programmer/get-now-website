@@ -1,0 +1,97 @@
+.cart-container{
+    padding: 5.5rem 0 2rem;
+}
+.cart-table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    .cart-table tr{
+        border: 2px dashed var(--first-color);
+        margin-bottom: 40px;
+        border-radius: var(--border-radius);
+        -webkit-border-radius: var(--border-radius);
+        -moz-border-radius: var(--border-radius);
+        -ms-border-radius: var(--border-radius);
+        -o-border-radius: var(--border-radius);
+        padding: 10px 15px;
+    }
+}
+@media (max-width: 767px) {
+    .cart-table thead {
+        display: none;
+    }
+}
+.cart-table thead tr{
+    background-color: var(--first-color);
+}
+.cart-table th{
+    text-align: left;
+}
+.cart-table td{
+    border-bottom: var(--border-dashed);
+}
+@media (max-width: 767px) {
+    .cart-table td{
+        padding-left: 50%;
+        position: relative;
+        text-align: right;
+    }
+    .cart-table td::before{
+        content: attr(data-title);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        text-align: left;
+        padding-left: 20px;
+        font-size: var(--h3-font-size);
+    }
+}
+.cart-table .cart-img{
+    width: 100px;
+}
+.cart-table .cart__nums{
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    padding: .25rem  var(--p-0-75) ;
+    background: none;
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+.cart-table .cart-icon{
+    width: 30px;
+}
+@media (max-width: 767px) {
+    .cart-table .prodect-quantity{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .cart-table .prodect-icon{
+        border: none;
+    }
+}
+/*=============== Group Classes ===============*/
+.cart-table th,
+.cart-table td{
+    padding: 10px;
+}
+@media (max-width: 767px) {
+    .cart-table, 
+    .cart-table tbody, 
+    .cart-table tr, 
+    .cart-table td{
+        display: block;
+    }
+    .cart-table .prodect-img,
+    .cart-table .prodect-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+}

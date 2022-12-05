@@ -52,6 +52,8 @@
     --border-width: 1px;
     --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
     --border-radius-sumite:  95% 4% 97% 5%/0 94% 3% 95%;
+    --border-dashed: var(--border-width) dashed var(--text-color);
+    --border-solid: var(--border-width) solid var(--text-color)
 }
 @media screen and (min-width: 968px) {
 :root {
@@ -151,6 +153,15 @@ button {
 }
 select {
     all: unset;
+    outline: none;
+    appearance: none;
+}
+.cart-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--body-font);
 }
 textarea {
     resize: none;

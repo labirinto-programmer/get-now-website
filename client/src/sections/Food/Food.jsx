@@ -36,7 +36,7 @@ const Food = () => {
                             {
                                 data.slice(0, 6).map((item) => {
                                     return <Card key={item.id}>
-                                        <div className='food-img'>
+                                        <div className='card-img'>
                                             {getImg(item.imagePath)}
                                         </div>
                                         <h4>
@@ -45,7 +45,7 @@ const Food = () => {
                                         <p>
                                             {item.description}
                                         </p>
-                                        <div className='food-box d-flex'>
+                                        <div className='card-box d-flex'>
                                             <span>
                                                 {item.price}
                                             </span>

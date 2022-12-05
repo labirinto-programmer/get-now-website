@@ -11,7 +11,7 @@ const Favorite = () => {
                     {
                         data.slice(0, 16).map((item) => {
                             return <Card key={item.id}>
-                                <div className='food-img'>
+                                <div className='card-img'>
                                     {getImg(item.imagePath)}
                                 </div>
                                 <h4>
@@ -20,11 +20,11 @@ const Favorite = () => {
                                 <p>
                                     {item.description}
                                 </p>
-                                <div className='food-box d-flex'>
+                                <div className='card-box d-flex'>
                                     <span>
                                         {item.price}
                                     </span>
-                                    <BtnPrimary path='/cart' title='add to cart' />
+                                    <BtnPrimary path='/cart' title='read more' />
                                 </div>
                             </Card>
                         })

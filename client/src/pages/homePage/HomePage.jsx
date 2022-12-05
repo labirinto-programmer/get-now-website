@@ -1,7 +1,7 @@
 import {Hero, Services, Food, Gallery, NewsLetter} from '../../sections/index';
-import './Home.css';
+import './HomePage.css';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Hero/>
@@ -13,4 +13,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default HomePage;

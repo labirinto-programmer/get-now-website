@@ -4,7 +4,7 @@ import './FormLink.css';
 const FormLink = (props) => {
   return (
     <span>
-        {props.text}<Link className="signup-link" to={props.to}> {props.title}</Link>
+        {props.text}&nbsp;<Link className="signup-link" to={props.to}>{props.title}</Link>
     </span>
   )
 }

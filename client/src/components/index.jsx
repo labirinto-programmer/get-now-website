@@ -9,3 +9,4 @@ export {default as FormInput} from './formInput/FormInput';
 export {default as MainHeadForm} from './mainHeadForm/MainHeadForm';
 export {default as FormContaier} from './formContainer/FormContaier';
 export {default as FormLink} from './formLink/FormLink';
+export {default as Results} from './results/Results';

@@ -46,3 +46,9 @@
 .checkout-table{
     width: 100%;
 }
+.order-name{
+    color: var(--input-placeholder-color)
+}
+.order-nums{
+    color: var(--first-color);
+}

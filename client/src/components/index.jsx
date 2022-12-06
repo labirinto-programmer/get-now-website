@@ -10,3 +10,6 @@ export {default as MainHeadForm} from './mainHeadForm/MainHeadForm';
 export {default as FormContaier} from './formContainer/FormContaier';
 export {default as FormLink} from './formLink/FormLink';
 export {default as Results} from './results/Results';
+export {default as GridContainer} from './girdContainer/GridContainer';
+export {default as Dropdown} from './Dropdown/Dropdown';
+export {default as TotalTable} from './totalTable/TotalTable';

@@ -24,7 +24,7 @@ const Favorite = () => {
                                     <span>
                                         {item.price}
                                     </span>
-                                    <BtnPrimary path='/cart' title='read more' />
+                                    <BtnPrimary path='/details' title='read more' />
                                 </div>
                             </Card>
                         })

@@ -1,0 +1,8 @@
+.results-box {
+    width: 50%;
+    margin: 0 auto;
+}
+.results-box .results-text {
+    color: var(--first-color);
+    text-align: center;
+}

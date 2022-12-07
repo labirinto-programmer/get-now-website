@@ -1,5 +1,5 @@
 import {NavLink} from "react-router-dom";
-import {MainHeading, Container, Card, BtnPrimary, NumbersBtn} from '../../components/index';
+import {MainHeading, Container, MainCard, BtnPrimary, NumbersBtn} from '../../components/index';
 import {getImg} from '../../utils/Helper';
 import {lists} from "../../data/dataInfo.jsx";
 import data from "../../data/food.json";
@@ -35,7 +35,7 @@ const Food = () => {
                         <div className='food-content d-grid'>
                             {
                                 data.slice(0, 6).map((item) => {
-                                    return <Card key={item.id}>
+                                    return <MainCard key={item.id}>
                                         <div className='card-img'>
                                             {getImg(item.imagePath)}
                                         </div>
@@ -51,7 +51,7 @@ const Food = () => {
                                             </span>
                                             <BtnPrimary path='/details' title='read more' />
                                         </div>
-                                    </Card>
+                                    </MainCard>
                                 })
                             }
                         </div>

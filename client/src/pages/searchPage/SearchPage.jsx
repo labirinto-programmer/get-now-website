@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Container, Card, BtnPrimary, NumbersBtn, Results} from '../../components/index';
+import {Container, MainCard, BtnPrimary, NumbersBtn, Results} from '../../components/index';
 import {getImg} from '../../utils/Helper';
 import {selectInfo} from "../../data/dataInfo.jsx";
 import searchicon from '../../assets/image/search-icon.png';
@@ -85,7 +85,7 @@ const Search = () => {
                             <div className='search-menu d-grid'>
                                 {
                                     info.slice(0, 16).map((item) => {
-                                        return <Card key={item.id}>
+                                        return <MainCard key={item.id}>
                                             <div className='card-img'>
                                                 {getImg(item.imagePath)}
                                             </div>
@@ -101,7 +101,7 @@ const Search = () => {
                                                 </span>
                                                 <BtnPrimary path='/cart' title='add to cart' />
                                             </div>
-                                        </Card>
+                                        </MainCard>
                                     })
                                 }
                             </div>

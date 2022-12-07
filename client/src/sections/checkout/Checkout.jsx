@@ -1,6 +1,5 @@
 import {useState} from 'react';
 import {Container, GridContainer, Dropdown, TotalTable} from '../../components/index';
-import citiesData from '../../data/cities.json';
 import countriesData from '../../data/countries.json';
 import './Checkout.css';
 

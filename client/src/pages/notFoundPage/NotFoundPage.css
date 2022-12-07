@@ -1,0 +1,8 @@
+.not-found-container {
+    width: 80%;
+    margin: var(--m-2) auto;
+    text-align: center;
+}
+.not-found-container h2 {
+    font-size: calc(var(--h1-font-size) + var(--h1-font-size));
+}

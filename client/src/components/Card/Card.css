@@ -59,9 +59,21 @@
     width: 100%;
     height: 100%;
 }
+@media (max-width: 767px) {
+    .main-card .orange-box .main-heart .white-heart {
+        width: 80%;
+        height: 100%;
+    }
+}
 .main-card .orange-box .main-heart .red-heart {
     width: 100%;
     height: 100%;
+}
+@media (max-width: 767px) {
+    .main-card .orange-box .main-heart .red-heart {
+        width: 80%;
+        height: 100%;
+    }
 }
 .card-img {
     width: 130px;

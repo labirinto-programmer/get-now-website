@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import {HomePage, SearchPage, LoginPage, CartPage, Register, ContactPage, AboutPage, FavoritePage, CheckoutPage} from '../pages/index';
+import {HomePage, SearchPage, LoginPage, CartPage, Register, ContactPage, AboutPage, FavoritePage, CheckoutPage, NotFoundPage} from '../pages/index';
 
 const Routers = () => {
         return (
@@ -14,6 +14,7 @@ const Routers = () => {
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="/checkout" element={<CheckoutPage/>} />
                         <Route path="/favorite" element={<FavoritePage />} />
+                        <Route path="*" element={<NotFoundPage />} />
                 </Routes>
         )
 }

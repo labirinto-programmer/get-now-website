@@ -7,6 +7,16 @@
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 767px) {
+    .search .search-content .search-box {
+        width: 90%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .search .search-content .search-box {
+        width: 90%;
+    }
+}
 .search .search-content .search-box input {
     width: 90%;
     color: white;
@@ -20,6 +30,11 @@
     -ms-border-radius: var(--border-radius);
     -o-border-radius: var(--border-radius);
 }
+@media (max-width: 767px) {
+    .search .search-content .search-box input {
+        width: 80%;
+    }
+}
 .search .search-content .search-box input::placeholder {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -27,6 +42,11 @@
 }
 .search .search-content .search-box .search-img {
     width: 6%;
+}
+@media (max-width: 767px) {
+    .search .search-content .search-box .search-img {
+        width: 10%;
+    }
 }
 .search .search-content .search-box .search-img:hover {
     cursor: pointer;
@@ -38,41 +58,6 @@
     align-items: center;
     gap: 4%;
     margin: var(--m-3) auto;
-}
-.search .search-content .search-info .search-select {
-    width: 16%;
-    position: relative;
-}
-.search .search-content .search-info .search-select::after {
-    content: "";
-    width: 14%;
-    height: 50%;
-    position: absolute;
-    background-image: url('../../assets/image/list-arrow.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
-.search .search-content .search-info .search-select:hover {
-    cursor: pointer;
-}
-.search .search-content .search-info .search-select select {
-    width: 100%;
-    appearance: none;
-    padding: calc(var(--p-0-5) / 2) var(--p-0-5);
-    border-radius: var(--border-radius);
-    -webkit-border-radius: var(--border-radius);
-    -moz-border-radius: var(--border-radius);
-    -ms-border-radius: var(--border-radius);
-    -o-border-radius: var(--border-radius);
 }
 .search .search-content .search-result .search-menu {
     grid-template-columns: repeat(4, 1fr);

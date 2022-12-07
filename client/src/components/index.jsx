@@ -1,7 +1,7 @@
 export {default as Container} from './container/Container';
 export {default as MainHeading} from './mainHeading/MainHeading';
 export {default as Card} from './card/Card';
-export {BtnPrimary, BtnSecondary, BtnForm} from './button/Button';
+export {BtnPrimary, BtnSecondary, BtnForm, BtnError} from './button/Button';
 export {default as NavBar} from './navbar/NavBar';
 export {default as GalleryCard} from './galleryCard/GalleryCard';
 export {default as NumbersBtn} from './numbersBtn/NumbersBtn';
@@ -11,5 +11,5 @@ export {default as FormContaier} from './formContainer/FormContaier';
 export {default as FormLink} from './formLink/FormLink';
 export {default as Results} from './results/Results';
 export {default as GridContainer} from './girdContainer/GridContainer';
-export {default as Dropdown} from './Dropdown/Dropdown';
+export {Dropdown, SearchDropdown} from './dropdown/Dropdown';
 export {default as TotalTable} from './totalTable/TotalTable';

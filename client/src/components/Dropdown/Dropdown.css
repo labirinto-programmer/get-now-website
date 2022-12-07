@@ -9,7 +9,8 @@
     margin: 10px 0;
     padding: 8px 25px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-    border: 1px solid var(--text-color);
+    font-size: var(--normal-font-size);
+    border: 2px solid var(--text-color);
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
@@ -47,15 +48,21 @@
 .dropdown-item{
     display: block;
     padding: 10px 10px 10px 30px;
-}
-.dropdown-item:hover{
-    cursor: pointer;
-    background-color: var(--first-color-alt);
+    font-size: var(--normal-font-size);
     transition: all var(--transition);
     -webkit-transition: all var(--transition);
     -moz-transition: all var(--transition);
     -ms-transition: all var(--transition);
     -o-transition: all var(--transition);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+.dropdown-item:hover{
+    cursor: pointer;
+    background-color: var(--first-color-alt);
 }
 .icon-dropdown{
     width: 30px;

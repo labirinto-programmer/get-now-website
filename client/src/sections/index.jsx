@@ -12,3 +12,5 @@ export {default as About} from './about/About';
 export {default as AboutShow} from './aboutShow/AboutShow';
 export {default as Checkout} from './checkout/Checkout';
 export {default as Favorite} from './favorite/Favorite';
+export {default as Payment} from './payment/Payment';
+export {default as Register} from './register/Register';

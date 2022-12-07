@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import {HomePage, SearchPage, LoginPage, CartPage, Register, ContactPage, AboutPage, FavoritePage, CheckoutPage, NotFoundPage} from '../pages/index';
+import {HomePage, SearchPage, LoginPage, CartPage, RegisterPage, ContactPage, AboutPage, FavoritePage, CheckoutPage, PaymentPage, NotFoundPage} from '../pages/index';
 
 const Routers = () => {
         return (
@@ -9,12 +9,13 @@ const Routers = () => {
                         <Route path="/login" element={<LoginPage />} />
                         <Route path="/cart" element={<CartPage />} />
                         <Route path="/all" element={<SearchPage />} />
-                        <Route path="/register" element={<Register />} />
+                        <Route path="/register" element={<RegisterPage />} />
                         <Route path="/contact" element={<ContactPage />} />
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="/checkout" element={<CheckoutPage/>} />
                         <Route path="/favorite" element={<FavoritePage />} />
                         <Route path="*" element={<NotFoundPage />} />
+                        <Route path="/payment" element={<PaymentPage />} />
                 </Routes>
         )
 }

@@ -21,3 +21,8 @@ export const BtnError = (props) => {
         <Link className='btn btn-error' to={props.path}>{props.title}</Link>
     )
 }
+export const BtnFormTable = (props) => {
+    return (
+        <input type="submit" value={props.title} className='btn btn-primary' />
+    )
+}

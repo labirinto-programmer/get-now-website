@@ -1,4 +1,3 @@
-import {BtnPrimary} from '../index';
 import './TotalTable.css';
 
 const TotalTable = (props) => {
@@ -26,10 +25,6 @@ const TotalTable = (props) => {
               </tr>
           </tbody>
         </table>
-        <div className='table-btn'>
-          <BtnPrimary title={props.titleBtnEst}/>
-          <BtnPrimary title={props.titleBtnEnd}/>
-        </div>
   </div>
   )
 }

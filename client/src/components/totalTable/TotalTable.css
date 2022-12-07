@@ -23,10 +23,6 @@
 .total-total strong span {
     color: var(--first-color);
 }
-.table-btn {
-    display: flex;
-    gap: 1.25rem;
-}
 /*=============== Group Classes ===============*/
 .total-table td, 
 .total-table th{

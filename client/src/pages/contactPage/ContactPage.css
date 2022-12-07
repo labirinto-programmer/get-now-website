@@ -1,6 +1,3 @@
-.contact .contact-content {
-    padding: var(--fixed-padding);
-}
 .contact .contact-content .contact-box {
     width: 90%;
     flex-wrap: wrap;

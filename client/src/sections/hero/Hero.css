@@ -1,5 +1,4 @@
 .hero-container {
-    padding: var(--fixed-padding);
     row-gap: 90px;
 }
 @media (max-width: 767px) {
@@ -27,19 +26,11 @@
     font-weight: var(--font-bold);
     margin-bottom: var(--m-1);
 }
-.hero-btns {
-    margin-top: var(--m-2-5);
-    margin-bottom: var(--m-2-5);
-    gap: 3rem;
-}
 .hero-social {
     gap: 1.5rem;
     align-items: center;
 }
 @media (max-width: 767px) {
-    .hero-btns {
-        justify-content: center;
-    }
     .hero-social {
         justify-content: center;
     }

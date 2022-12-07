@@ -1,6 +1,3 @@
-.about-container {
-    padding: var(--fixed-padding);
-}
 .about-container .about-data {
     flex-wrap: wrap;
     align-items: center;

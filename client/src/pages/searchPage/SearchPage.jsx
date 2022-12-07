@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Container,  MainCard, BtnPrimary, NumbersBtn, Results} from '../../components/index';
+import {Container, MainCard, BtnPrimary, NumbersBtn, Results, SearchDropdown} from '../../components/index';
 import {getImg} from '../../utils/Helper';
 import {selectInfo} from "../../data/dataInfo.jsx";
 import searchicon from '../../assets/image/search-icon.png';
@@ -9,16 +9,16 @@ import './SearchPage.css';
 const Search = () => {
     const [info, setInfo] = useState(data);
     const [num, setNum] = useState(16);
-    const [fav, setFav] = useState("");
     const [searchPhrase, setSearchPhrase] = useState("");
+    const [select, setSelected] = useState('choose one');
 
     const favEle = (e) => {
-        if (e.target.value.toLowerCase() === "latest") {
+        if (e.target.textContent === "latest") {
             const chooseInfo = data.sort((item1, item2) => {
                 return new Date(item1.releaseDate) > new Date(item2.releaseDate) ? -1 : 1;
             });
             setInfo(chooseInfo);
-        } else if (e.target.value.toLowerCase() === "popularity") {
+        } else if (e.target.textContent === "popularity") {
             const chooseInfo = data.sort((item1, item2) => {
                 return item1.popularity > item2.popularity ? -1 : 1;
             });
@@ -29,7 +29,7 @@ const Search = () => {
             });
             setInfo(chooseInfo);
         }
-		setFav(e.target.value);
+		setSelected(e.target.textContent);
     }
     const search = (event) => {
 		const matchedInfo = data.filter((item) => {
@@ -61,21 +61,12 @@ const Search = () => {
                                 showing 1-{0} of {data.length} resultes
                             </span>
                         }
-                        <div className='search-select'>
-                            <select className='border-light' onChange={favEle} value={fav}>
-                                {
-                                    selectInfo.map((item) => {
-                                        return (
-                                            item.op.map((ele, index) => {
-                                                return (
-                                                    <option value={ele} key={index}>{ele}</option>
-                                                )
-                                            })
-                                        )
-                                    })
-                                }
-                            </select>
-                        </div>
+                        <SearchDropdown 
+                        setSelected={setSelected} 
+                        selected={select} 
+                        data={selectInfo}
+                        onClick={favEle}
+                        />
                     </div>
                     <div className='search-result'>
                         {

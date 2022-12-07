@@ -1,6 +1,10 @@
 import {useState} from 'react';
+<<<<<<< HEAD
+import {Container, GridContainer, Dropdown, TotalTable} from '../../components/index';
+=======
 import {Container, GridContainer, Dropdown, TotalTable, FormContaier, MainHeadForm, BtnFormTable, BtnPrimary, BtnContaier, BtnSecondary} from '../../components/index';
 import citiesData from '../../data/cities.json';
+>>>>>>> front-end2
 import countriesData from '../../data/countries.json';
 import './Checkout.css';
 

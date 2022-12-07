@@ -28,6 +28,16 @@ export const WidthContainer = (props) => {
       </div>
   )
 }
+<<<<<<< HEAD
+
+export const GridContainer = (props) => {
+  return (
+    <div className={`${props.className} grid-container d-grid`}>
+      {props.children}
+    </div>
+  )
+}
+=======
 
 export const GridContainer = (props) => {
   return (
@@ -37,3 +47,4 @@ export const GridContainer = (props) => {
   )
 }
 
+>>>>>>> front-end2

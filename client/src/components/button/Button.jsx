@@ -16,3 +16,8 @@ export const BtnForm = (props) => {
         <input type="submit" value={props.title} className='btn btn-primary form-btn' />
     )
 }
+export const BtnFormTable = (props) => {
+    return (
+        <input type="submit" value={props.title} className='btn btn-primary' />
+    )
+}

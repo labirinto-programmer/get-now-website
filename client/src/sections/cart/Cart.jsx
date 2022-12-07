@@ -7,7 +7,7 @@ const Cart = () => {
   return (
       <section className='cart section'>
         <Container>
-            <div className='cart-container'>
+            <div className='cart-container section-container'>
                 <table className='cart-table'>
                   <thead>
                     <tr>

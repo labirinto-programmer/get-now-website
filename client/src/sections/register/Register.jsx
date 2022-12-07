@@ -1,11 +1,12 @@
-import {Container, FormContaier, MainHeadForm, FormInput, BtnForm, FormLink} from '../../components/index';
+import {Container, FormContaier, MainHeadForm, FormInput, BtnForm, FormLink, WidthContainer} from '../../components/index';
 import './Register.css';
 
 const Register = () => {
   return (
     <section className='register section'>
     <Container>
-        <FormContaier>
+    <WidthContainer>
+     <FormContaier>
             <MainHeadForm title='Hello Friend' description='Sing up with your information'/>
             <form className='form'>
                 <FormInput type="text" placeholder="Your name" />
@@ -16,6 +17,7 @@ const Register = () => {
             </form>
             <FormLink text="Did have an account?" to="/login" title="Login"/>
         </FormContaier>
+    </WidthContainer>
     </Container>
     </section>
   )

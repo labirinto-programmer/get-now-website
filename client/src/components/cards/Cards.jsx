@@ -1,9 +1,9 @@
 import {useState} from 'react';
 import whiteheart from '../../assets/image/white-heart.png';
 import redheart from '../../assets/image/red-heart.png';
-import './Card.css';
+import './Cards.css';
 
-const CardFood = (props) => {
+export const MainCard = (props) => {
     const [showMenu, setShowMenu] = useState(true);
     return (
         <div className='main-card'>
@@ -21,4 +21,11 @@ const CardFood = (props) => {
     )
 }
 
-export default CardFood;
+export const GalleryCard = (props) => {
+    return (
+        <div className='gallery-card border-thick'>
+            {props.children}
+        </div>
+    )
+}
+

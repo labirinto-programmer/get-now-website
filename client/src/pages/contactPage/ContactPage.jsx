@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <section className='contact section'>
             <Container>
-                <div className='contact-content'>
+                <div className='contact-content section-container'>
                     <div className='contact-box d-flex'>
                         <div className='contact-social'>
                         {

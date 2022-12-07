@@ -1,3 +1,4 @@
+/*=============== Bass Container ===============*/
 .container {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
@@ -28,5 +29,55 @@
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+}
+/*=============== Width Container ===============*/
+.Width-container {
+  width: 45%;
+  margin: 0 auto;
+}
+@media (min-width: 768) and (max-width: 991px) {
+  .Width-container {
+    width: 75%;
+  }
+}
+@media (max-width: 767px) {
+  .Width-container {
+    width: 100%;
+  }
+}
+/*=============== Form Container ===============*/
+.form-container {
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  padding: 40px 35px;
+}
+/*=============== Grid Container ===============*/
+.grid-container{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+}
+@media (max-width: 767px) {
+  .grid-container{
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 991px) {
+  .grid-container{
+      gap: 3rem;
+  }
+}
+/*=============== Btn Container ===============*/
+.btn-container {
+  gap: 1.25rem;
+  margin-top: var(--m-2-5);
+  margin-bottom: var(--m-2-5);
+}
+@media (max-width: 767px) {
+  .btn-container {
+    justify-content: center;
   }
 }

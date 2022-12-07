@@ -1,4 +1,4 @@
-import {Container, Card, BtnPrimary} from '../../components/index';
+import {Container, MainCard, BtnPrimary} from '../../components/index';
 import {getImg} from '../../utils/Helper';
 import data from "../../data/food.json";
 import './Favorite.css';
@@ -10,7 +10,7 @@ const Favorite = () => {
                 <div className='favorite-menu d-grid'>
                     {
                         data.slice(0, 16).map((item) => {
-                            return <Card key={item.id}>
+                            return <MainCard key={item.id}>
                                 <div className='card-img'>
                                     {getImg(item.imagePath)}
                                 </div>
@@ -24,9 +24,9 @@ const Favorite = () => {
                                     <span>
                                         {item.price}
                                     </span>
-                                    <BtnPrimary path='/cart' title='read more' />
+                                    <BtnPrimary path='/details' title='read more' />
                                 </div>
-                            </Card>
+                            </MainCard>
                         })
                     }
                 </div>

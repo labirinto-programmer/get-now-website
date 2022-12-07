@@ -8,3 +8,4 @@ export {MainHeading, MainHeadForm} from './Heads/Heads';
 export {default as FormLink} from './formLink/FormLink';
 export {default as Dropdown} from './dropdown/Dropdown';
 export {default as TotalTable} from './totalTable/TotalTable';
+export {default as Results} from './results/Results';

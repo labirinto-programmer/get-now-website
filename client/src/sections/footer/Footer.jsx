@@ -9,6 +9,7 @@ const Footer = () => {
     return (
         <footer className='section'>
             <Container>
+                <hr className='border-light'/>
                 <div className='footer-data d-flex'>
                     <div className='footer-content'>
                         <Link to='/' className='footer-logo'>

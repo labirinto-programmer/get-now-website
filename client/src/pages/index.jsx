@@ -7,4 +7,5 @@ export {default as AboutPage} from './aboutPage/AboutPage';
 export {default as CheckoutPage} from './checkoutPage/CheckoutPage';
 export {default as ContactPage} from './contactPage/ContactPage';
 export {default as FavoritePage} from './favoritePage/FavoritePage';
+export {default as NotFoundPage} from './notFoundPage/NotFoundPage';
 export {default as PaymentPage} from './paymentPage/PaymentPage';

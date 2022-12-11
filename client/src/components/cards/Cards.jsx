@@ -8,7 +8,9 @@ export const MainCard = (props) => {
     return (
         <div className='main-card'>
             <div className='orange-box'>
-                <div className='main-heart' onClick={() => setShowMenu(!showMenu)}>
+                <div className='main-heart' onClick={() => {
+                    setShowMenu(!showMenu) 
+                    props.onClick()}}>
                     {
                         showMenu 
                         ? <img className='white-heart' src={whiteheart} alt='whiteheart' /> 

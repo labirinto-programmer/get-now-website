@@ -33,7 +33,7 @@ export const SearchDropdown = (props) => {
                     return (
                         item.op.map((ele, index) => {
                             return (
-                                <span key={index} className='search-dropdown-item' onClick={ (e) => {
+                                <span key={index} className='search-dropdown-item' onClick={(e) => {
                                     props.setSelected(ele) 
                                     setActive(false)
                                     props.onClick(e)

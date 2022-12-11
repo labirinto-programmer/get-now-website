@@ -9,3 +9,4 @@ export {default as Results} from './results/Results';
 export {Dropdown, SearchDropdown} from './dropdown/Dropdown';
 export {default as TotalTable} from './totalTable/TotalTable';
 export {FormInput, FieldInput, SelectedInput} from './inputs/Inputs';
+export {default as Popup} from './popup/Popup';

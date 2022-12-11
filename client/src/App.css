@@ -48,6 +48,7 @@
     /*========== Z Index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
+    --z-popup: 110;
     /*========== Border ==========*/
     --border-width: 1px;
     --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;

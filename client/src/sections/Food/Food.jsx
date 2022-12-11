@@ -1,11 +1,16 @@
+import {useState} from "react";
 import {NavLink} from "react-router-dom";
-import {MainHeading, Container, MainCard, BtnPrimary, NumbersBtn} from '../../components/index';
+import {MainHeading, Container, MainCard, BtnPrimary, NumbersBtn, Popup, BtnSecondary} from '../../components/index';
+
+import popupicon from "../../assets/image/popup-icon.png";
+
 import {getImg} from '../../utils/Helper';
 import {lists} from "../../data/dataInfo.jsx";
 import data from "../../data/food.json";
 import './Food.css';
 
 const Food = () => {
+    const [showPopup, setShowPopup] = useState(false);
     return (
         <>
         <section className='food section'>
@@ -35,7 +40,7 @@ const Food = () => {
                         <div className='food-content d-grid'>
                             {
                                 data.slice(0, 6).map((item) => {
-                                    return <MainCard key={item.id}>
+                                    return <MainCard key={item.id} onClick={() => {setShowPopup(!showPopup)}}>
                                         <div className='card-img'>
                                             {getImg(item.imagePath)}
                                         </div>
@@ -60,6 +65,19 @@ const Food = () => {
                 </div>
             </Container>
         </section>
+        <Popup showPopup={showPopup} onClick={() => {setShowPopup(false)}}>
+            <p>
+                Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Qui Magni
+                Delectus Tenetur Autem, Sint Veritatis!
+            </p>
+            <div className="popup-content-img">
+                <img src={popupicon} alt="popupicon" />
+            </div>
+            <div className="popup-btn d-flex">
+                <BtnPrimary path='/register' title='sing up' />
+                <BtnSecondary path='/login' title='login' />
+            </div>
+        </Popup>
         </>
     )
 }

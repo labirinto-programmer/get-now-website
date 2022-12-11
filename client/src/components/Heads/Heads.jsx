@@ -5,11 +5,11 @@ export const MainHeading = (props) => {
       <div className='main-heading'>
           <div className='heading-title'>
               <h2>
-                  {props.title}
+                {props.title}
               </h2>
           </div>
           <p className='heading-description'>
-              {props.text}
+            {props.text}
           </p>
       </div>
   )

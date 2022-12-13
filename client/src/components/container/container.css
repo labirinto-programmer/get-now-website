@@ -58,7 +58,7 @@
 /*=============== Grid Container ===============*/
 .grid-container{
   grid-template-columns: repeat(2, 1fr);
-  gap: 6rem;
+  gap: 5rem;
 }
 @media (max-width: 767px) {
   .grid-container{
@@ -80,4 +80,8 @@
   .btn-container {
     justify-content: center;
   }
+}
+.field-container{
+  margin-top: var(--m-2-5);
+  margin-bottom: var(--m-2);
 }

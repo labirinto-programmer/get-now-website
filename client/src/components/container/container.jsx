@@ -14,6 +14,13 @@ export const FormContaier = (props) => {
       </div>
   )
 }
+export const FieldContainer = (props) => {
+  return (
+      <div className='field-container'>
+        {props.children}
+      </div>
+  )
+}
 export const BtnContaier = (props) => {
   return (
       <div className='btn-container d-flex'>

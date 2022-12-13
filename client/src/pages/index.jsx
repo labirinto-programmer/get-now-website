@@ -9,3 +9,4 @@ export {default as ContactPage} from './contactPage/ContactPage';
 export {default as FavoritePage} from './favoritePage/FavoritePage';
 export {default as NotFoundPage} from './notFoundPage/NotFoundPage';
 export {default as PaymentPage} from './paymentPage/PaymentPage';
+export {default as DetailsPage} from './detailsPage/DetailsPage';

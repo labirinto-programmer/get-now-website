@@ -1,18 +1,5 @@
 import './Inputs.css';
 
-export const FormInput = (props) => {
-  return (
-    <div className="form__group ">
-        <input
-        className='form-input'
-        type={props.type}
-        placeholder={props.placeholder}
-        onChange={props.onChange}
-        required
-        />
-  </div>
-  )
-}
 export const FieldInput = (props) => {
   return (
     <p className='checkout-box'>
@@ -21,7 +8,20 @@ export const FieldInput = (props) => {
           <abbr className="checkout-required" title="required">*</abbr>
       </label>
       <span className='checkout-info'>
-          <input type={props.type} className='checkout-input'/>
+          {props.children}
+      </span>
+    </p>
+  )
+}
+export const FieldForm = (props) => {
+  return (
+    <p className='field'>
+      <label htmlFor={props.htmlFor} className='field-subtitle'>
+          {props.title}&nbsp;
+          <abbr className="field-required" title="required">*</abbr>
+      </label>
+      <span className='field-type'>
+          {props.children}
       </span>
     </p>
   )

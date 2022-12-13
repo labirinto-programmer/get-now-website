@@ -1,4 +1,4 @@
-import {Container, BtnForm} from '../../components/index';
+import {Container, BtnForm, MainHeading} from '../../components/index';
 import {getImg} from '../../utils/Helper';
 import {contactInfo} from "../../data/dataInfo.jsx";
 import './ContactPage.css';
@@ -8,6 +8,7 @@ const Contact = () => {
         <section className='contact section'>
             <Container>
                 <div className='contact-content section-container'>
+                <MainHeading title='Contact'/>
                     <div className='contact-box d-flex'>
                         <div className='contact-social'>
                         {

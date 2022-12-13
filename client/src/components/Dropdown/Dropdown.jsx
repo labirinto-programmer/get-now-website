@@ -48,3 +48,23 @@ export const SearchDropdown = (props) => {
         </span>
     )
 }
+export const NumsDropdown = (props) => {
+    const [isActive, setActive] = useState(false);
+    const options = props.data;
+    return (
+        <span className='nums-dropdown'>
+        <span className='numsdropdown-btn' onClick={(e) => setActive(!isActive)}><strong>{props.selected}</strong><img className='numsdropdown-icon' src={IconArrow} alt="Icon of Arrow"/></span>
+            {isActive && <span className='numsdropdown-content'>
+            {options.map((option, index) => (
+                <span key={index} className='numsdropdown-item' onClick={ (e) => {
+                    props.setSelected(option) 
+                    setActive(false)
+                    }}>
+                    {option}
+                </span>
+            ))}
+            </span>}
+        </span>
+    )
+
+}

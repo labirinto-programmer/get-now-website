@@ -1,6 +1,6 @@
-import './TotalTable.css';
+import './Tables.css';
 
-const TotalTable = (props) => {
+export const TotalTable = (props) => {
   return (
     <div className='table-container'>
         <h2 className='table-title'>{props.title}</h2>
@@ -28,5 +28,20 @@ const TotalTable = (props) => {
   </div>
   )
 }
+export const TabTable = (props) => {
+  return (
+    <table className='tab-table'>
+      <tbody>
+        <tr>
+            <th>diet type</th>
+            <td><p>Gluten Free, Vegan, Vegetarian</p></td>
+        </tr>
+        <tr>
+            <th>Ingredients</th>
+            <td><p>Almond Butter, Dates, Fig, Mango</p></td>
+        </tr>
+    </tbody>
+    </table>
+  )
+}
 
-export default TotalTable

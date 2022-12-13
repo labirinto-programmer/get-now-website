@@ -1,5 +1,6 @@
 .btn {
     display: inline-block;
+    box-shadow: var(--box-shadow);
     padding: var(--p-0-5) var(--p-1);
     border-radius: var(--border-radius);
     -webkit-border-radius: var(--border-radius);

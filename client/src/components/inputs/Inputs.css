@@ -1,12 +1,44 @@
-.form-input {
+.form-input{
     width: 100%;
-    padding: 15px 10px;
-    margin-bottom: 25px;
     background-color: transparent;
-    border: none;
     border-bottom: 2px solid var(--text-color);
+}
+.field-subtitle {
+    display: block;
+    font-size: var(--normal-font-size);
+    line-height: 1.3;
+    color: var(--first-color);
+    padding: .30rem;
     font-style: italic;
 }
-.form-input::placeholder {
-    color: var(--input-placeholder-color);
+.field .field-type input{
+    padding: .32rem 0;
+    border-bottom: 2px solid var(--text-color);
+}
+.field .field-type input, 
+.field .field-type textarea{
+    width: 100%;
+    background-color: transparent;
+    color: var(--text-color);
+}
+.field .field-type textarea{
+    border: 2px solid var(--text-color);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    padding: var(--p-1);
+}
+.field-required{
+    color: var(--text-color);
+    font-weight: 700;
+    border: 0!important;
+    text-decoration: none;
+}
+.field{
+    width: 100%;
+    /* flex-basis: 100%; */
+    padding: .32rem .63rem;
+    margin-bottom: var(--m-2);
 }

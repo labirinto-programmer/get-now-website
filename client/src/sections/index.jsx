@@ -14,3 +14,5 @@ export {default as Checkout} from './checkout/Checkout';
 export {default as Favorite} from './favorite/Favorite';
 export {default as Payment} from './payment/Payment';
 export {default as Register} from './register/Register';
+export {default as Details} from './details/Details';
+export {default as Tab} from './tab/Tab';

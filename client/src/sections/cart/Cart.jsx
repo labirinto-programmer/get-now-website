@@ -1,5 +1,5 @@
 import './Cart.css';
-import {Container} from '../../components/index';
+import {Container, MainHeading} from '../../components/index';
 import CloseIcon from '../../assets/image/close-icon.png';
 import CartImg from '../../assets/image/image2.png';
 
@@ -8,6 +8,7 @@ const Cart = () => {
       <section className='cart section'>
         <Container>
             <div className='cart-container section-container'>
+            <MainHeading title='Cart'/>
                 <table className='cart-table'>
                   <thead>
                     <tr>

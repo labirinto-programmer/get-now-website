@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {Container, GridContainer, Dropdown, TotalTable, FormContaier, MainHeadForm, BtnFormTable, BtnPrimary, BtnContaier, BtnSecondary} from '../../components/index';
+import {Container, GridContainer, Dropdown, TotalTable, FormContaier, MainHeadForm, BtnFormTable, BtnPrimary, BtnContaier, BtnSecondary, FieldForm} from '../../components/index';
 import countriesData from '../../data/countries.json';
 import './Checkout.css';
 
@@ -14,78 +14,32 @@ const Checkout = () => {
                     <FormContaier >
                     <MainHeadForm title='Infomation' description='wraite your information' />
                     <div className='checkout-form d-flex'>
-                        <p className='checkout-box checkout-name'>
-                            <label htmlFor='frist-name' className='checkout-subtitle'>
-                                First name&nbsp;
-                                <abbr className="checkout-required" title="required">*</abbr>
-                            </label>
-                            <span className='checkout-info'>
-                                <input type="text" className='checkout-input'/>
-                            </span>
-                        </p>
-                        <p className='checkout-box checkout-name'>
-                            <label htmlFor='last-name' className='checkout-subtitle'>
-                                Last name&nbsp;
-                                <abbr className="checkout-required" title="required">*</abbr>
-                            </label>
-                            <span className='checkout-info'>
-                                <input type="text" className='checkout-input'/>
-                            </span>
-                        </p>
-                        <p className='checkout-box'>
-                            <label htmlFor='country-name' className='checkout-subtitle'>
-                                Country&nbsp;
-                                <abbr className="checkout-required" title="required">*</abbr>
-                            </label>
-                            <span className='checkout-info'>
-                            <Dropdown selected={selected} setSelected={setSelected} data={data}/>
-                            </span>
-                        </p>
-                        <p className='checkout-box'>
-                            <label htmlFor='city-name' className='checkout-subtitle'>
-                                City&nbsp;
-                                <abbr className="checkout-required" title="required">*</abbr>
-                            </label>
-                            <span className='checkout-info'>
-                                <input type="text" className='checkout-input'/>
-                            </span>
-                        </p>
-                        <p className='checkout-box'>
-                            <label htmlFor='street-name' className='checkout-subtitle'>
-                                Street address&nbsp;
-                                <abbr className="checkout-required" title="required">*</abbr>
-                            </label>
-                            <span className='checkout-info'>
-                                <input type="text" className='checkout-input'/>
-                            </span>
-                        </p>
-                        <p className='checkout-box'>
-                            <label htmlFor='phone-name' className='checkout-subtitle'>
-                                Phone&nbsp;
-                                <abbr className="checkout-required" title="required">*</abbr>
-                            </label>
-                            <span className='checkout-info'>
-                                <input type="number" className='checkout-input'/>
-                            </span>
-                        </p>
-                        <p className='checkout-box'>
-                            <label htmlFor='postcode-name' className='checkout-subtitle'>
-                                Email&nbsp;
-                                <abbr className="checkout-required" title="required">*</abbr>
-                            </label>
-                            <span className='checkout-info'>
-                                <input type="email" className='checkout-input'/>
-                            </span>
-                        </p>
-                        <p className='checkout-box'>
-                            <label htmlFor='postcode-name' className='checkout-subtitle'>
-                                Postcode&nbsp;
-                                <abbr className="checkout-required" title="required">*</abbr>
-                            </label>
-                            <span className='checkout-info'>
-                                <input type="number" className='checkout-input'/>
-                            </span>
-                        </p>
+                    <div className='checkout-wrap d-flex'>
+                    <FieldForm title='First name' htmlFor='first-name' >
+                           <input type="text" />
+                        </FieldForm>
+                        <FieldForm title='Last name' htmlFor='first-name' >
+                           <input type="text" />
+                        </FieldForm>
+                    </div>
+                        <FieldForm title='Country' htmlFor='country-name' >
+                          <Dropdown selected={selected} setSelected={setSelected} data={data}/>
+                        </FieldForm>
+                        <FieldForm title='City' htmlFor='city-name' >
+                           <input type="text" />
+                        </FieldForm>
+                        <FieldForm title='Street address' htmlFor='street-name' >
+                           <input type="text" />
+                        </FieldForm>
+                        <FieldForm title='Phone' htmlFor='phone-name' >
+                          <input type="number"/>
+                        </FieldForm>
+                        <FieldForm title='Email' htmlFor='email-name' >
+                          <input type="email"/>
+                        </FieldForm>
+                        <FieldForm title='Postcode' htmlFor='postcode-name' >
+                          <input type="number"/>
+                        </FieldForm>
                     </div>
                     </FormContaier>
                     <div>

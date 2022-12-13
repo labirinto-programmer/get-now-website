@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import {Container, BtnForm, FormInput, MainHeadForm, FormContaier, FormLink, WidthContainer} from '../../components/index';
+import {Container, BtnForm, MainHeadForm, FormContaier, FormLink, WidthContainer, FieldForm} from '../../components/index';
 import './Login.css';
 
 const Login = () => {
@@ -17,8 +17,12 @@ const Login = () => {
             <FormContaier>
               <MainHeadForm title='Welcome Back' description='login with your email and password'/>
               <form className='form'>
-                  <FormInput type="email" placeholder="Email" />
-                  <FormInput type="password" placeholder="Password"/>
+                  <FieldForm title='Name' htmlFor='name'>
+                    <input type='text'/>
+                  </FieldForm>
+                  <FieldForm title='Email' htmlFor='email'>
+                    <input type='email'/>
+                  </FieldForm>
                 <div className='forgot-password'>
                   <Link to='/change'>forgot-password?</Link>
                 </div>

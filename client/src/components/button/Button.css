@@ -34,6 +34,15 @@
     gap: 10px;
     margin: calc(var(--m-3) + 32px) auto 0;
 }
-.food-btns a img {
-    width: 40px;
+.btn-error {
+    color: var(--text-color);
+    text-decoration: underline;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.btn-error:hover {
+    color: var(--first-color);
 }

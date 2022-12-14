@@ -1,0 +1,211 @@
+/*=============== Font Family ===============*/
+@font-face {
+    src: url("../src/assets/font/Pangolin/Pangolin-Regular.ttf");
+    font-family: Pangolin;
+}
+/*=============== Variables CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+    --transition: .3s;
+    /*========== Colors ==========*/
+    --first-color: hsl(29, 76%, 52%);
+    --first-color-alt:hsl(29, 71%, 40%);
+    --text-color: hsl(0, 0%, 100%);
+    --body-color: #323232;
+    --border-color: hsl(0, 0%, 100%);
+    --card-color: rgba(225, 225, 225, 0.1);
+    --input-color: hsl(0, 0%, 96%);
+    --input-color:rgba(255, 255, 255, 0.669);
+    --box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    /*========== Font and typography ==========*/
+    --body-font: Pangolin, cursive;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*========== Font weight ==========*/
+    --font-medium: 400;
+    --font-bold: 700;
+    /*========== Margenes ==========*/
+    --m-0-5: .5rem;
+    --m-0-75: .75rem;
+    --m-1: 1rem;
+    --m-1-5: 1.5rem;
+    --m-2: 2rem;
+    --m-2-5: 2.5rem;
+    --m-3: 3rem;
+    /*========== Padding ==========*/
+    --p-0-5: .5rem;
+    --p-0-75: .75rem;
+    --p-1: 1rem;
+    --p-1-5: 1.5rem;
+    --p-2: 2rem;
+    --p-2-5: 2.5rem;
+    --p-3: 3rem;
+    --fixed-padding: 5.5rem 0 2rem;
+    /*========== Z Index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-popup: 110;
+    /*========== Border ==========*/
+    --border-width: 1px;
+    --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+    --border-radius-sumite:  95% 4% 97% 5%/0 94% 3% 95%;
+    --border-dashed: var(--border-width) dashed var(--text-color);
+    --border-solid: var(--border-width) solid var(--text-color)
+}
+@media screen and (min-width: 968px) {
+:root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+    }
+}
+/*=============== Base ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*,::before,::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+::selection{
+    background-color: var(--text-color);
+    color: var(--body-color);
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--body-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--first-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--first-color-alt);
+}
+body {
+    background-color: var(--body-color);
+    background-image: url("./assets/image/frist-backgrond.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+h1,h2,h3,h4 {
+    color: var(--first-color);
+    font-weight: var(--font-medium);  
+}
+p {
+    color: var(--text-color);
+    font-size: var(--h3-font-size);
+    line-height: 1.6;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input {
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    letter-spacing: 1px;
+    color: var(--input-color);
+}
+input[type='submit'] {
+    cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  appearance: textfield;
+}
+button {
+    all: unset;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+select {
+    all: unset;
+    outline: none;
+    appearance: none;
+}
+.cart-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--body-font);
+}
+textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--h3-font);
+    max-height: 180px;
+}
+abbr{
+    cursor: help;
+}
+/*=============== FREAMWORK => REUSABLE CSS CLASSES ===============*/
+.d-grid{
+    display: grid;
+}
+.d-flex{
+    display: flex;
+}
+.section {
+    padding: 6.5rem 0 1rem;
+}
+.section-container{
+    padding: var(--fixed-padding);
+}
+.border-thick {
+    border-width: calc(var(--border-width) + 1px);
+    border-color: var(--border-color);
+    border-style: solid;
+}
+.border-light {
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    border-style: solid;
+}
+/*=============== Group Classes ===============*/
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb{
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}

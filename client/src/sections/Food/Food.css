@@ -1,0 +1,129 @@
+.food {
+    position: relative;
+    z-index: 1;
+}
+.food::after,
+.food::before {
+    content: "";
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.food::after {
+    left: 0;
+    background-image: url("../../assets/image/fork.png");
+}
+.food::before {
+    right: 0;
+    background-image: url("../../assets/image/knife.png");
+}
+.food-data {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+}
+.food-data .food-list {
+    width: 24%;
+}
+@media (max-width: 767px) {
+    .food-data .food-list {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-data .food-list {
+        width: 100%;
+    }
+}
+.food-data .food-list h3 {
+    text-transform: capitalize;
+}
+.food-data .food-list ul {
+    flex-direction: column;
+    margin: var(--m-2) auto;
+    gap: 4%;
+}
+@media (max-width: 767px) {
+    .food-data .food-list ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-data .food-list ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.food-data .food-list ul a {
+    width: 70%;
+    align-items: center;
+    color: var(--text-color);
+    gap: 4px;
+    padding: calc(var(--p-1) - 14px) calc(var(--p-1) - 8px);
+    margin: calc(var(--m-1) - 6px) 0;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+@media (max-width: 767px) {
+    .food-data .food-list ul a {
+        width: 40%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-data .food-list ul a {
+        width: 40%;
+    }
+}
+.food-data .food-list ul a:hover {
+    cursor: pointer;
+    background-color: var(--first-color-alt);
+}
+.food-data .food-list ul a.active {
+    background-color: var(--first-color);
+}
+.food-data .food-list ul a img {
+    width: 30%;
+}
+.food-data .food-menu {
+    width: 72%;
+}
+@media (max-width: 767px) {
+    .food-data .food-menu {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-data .food-menu {
+        width: 100%;
+    }
+}
+.food-data .food-menu .food-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 50px;
+    /* padding-top: 50px; */
+}
+@media (max-width: 767px) {
+    .food-data .food-menu .food-content {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: calc(var(--p-3) + 2px);
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-data .food-menu .food-content {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: calc(var(--p-3) + 2px);
+    }
+}

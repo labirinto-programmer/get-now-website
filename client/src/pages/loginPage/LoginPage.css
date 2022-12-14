@@ -1,0 +1,17 @@
+.forgot-password{
+    margin-bottom: var(--m-2);
+    text-align: right;
+}
+.forgot-password a {
+    color: var(--text-color);
+}
+.forgot-password a:hover {
+    color: var(--first-color-alt);
+}
+.forgot-password{
+    transition: all var(--transition);
+    -webkit-transition: all var(--transition);
+    -moz-transition: all var(--transition);
+    -ms-transition: all var(--transition);
+    -o-transition: all var(--transition);
+}

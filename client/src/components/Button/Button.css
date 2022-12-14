@@ -1,0 +1,39 @@
+.btn {
+    display: inline-block;
+    padding: var(--p-0-5) var(--p-1);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: all var(--transition) ease-in;
+    -webkit-transition: all var(--transition) ease-in;
+    -moz-transition: all var(--transition) ease-in;
+    -ms-transition: all var(--transition) ease-in;
+    -o-transition: all var(--transition) ease-in;
+}
+.btn-primary {
+    color: var(--text-color);
+    background-color: var(--first-color);
+}
+.btn-primary:hover {
+    background-color: var(--first-color-alt);
+}
+.btn-secondary {
+    color: var(--text-color);
+    background-color: transparent;
+    border: var(--border-width) solid var(--border-color);
+}
+.btn-secondary:hover {
+    background-color: var(--first-color);
+}
+.food-btns {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: calc(var(--m-3) + 32px) auto 0;
+}
+.food-btns a img {
+    width: 40px;
+}

@@ -1,0 +1,18 @@
+.favorite-container {
+    padding: var(--fixed-padding);
+}
+.favorite-container .favorite-menu {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 50px;
+    margin: calc(var(--m-3) + 50px) auto;
+}
+@media (max-width: 767px) {
+    .favorite-container .favorite-menu {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .favorite-container .favorite-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

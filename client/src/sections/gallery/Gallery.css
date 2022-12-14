@@ -1,0 +1,21 @@
+.gallery-data .gallery-menu {
+    padding: 0 var(--p-1);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+@media (max-width: 767px) {
+    .gallery-data .gallery-menu {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .gallery-data .gallery-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.gallery-data a {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: calc(var(--m-3) + 32px) auto 0;
+}

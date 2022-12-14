@@ -1,0 +1,18 @@
+.checkout-form{
+    flex-wrap: wrap;
+    margin-top: var(--m-2-5);
+    margin-bottom: var(--m-2);
+}
+.checkout-wrap{
+    gap: 2%;
+    width: 100%;
+}
+.checkout-table{
+    width: 100%;
+}
+.order-name{
+    color: var(--input-placeholder-color)
+}
+.order-nums{
+    color: var(--first-color);
+}

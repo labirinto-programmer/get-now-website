@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    .totle-container{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.totle-data{
+    width: 100%;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .totle-data{
+        width: 45%;
+    }
+}
+.totle-img img{
+    width: 280px;
+}
+@media (max-width: 767px) {
+    .totle-img img{
+        margin-top: 80px;
+    }
+}

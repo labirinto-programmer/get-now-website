@@ -27,21 +27,13 @@
 .btn-secondary:hover {
     background-color: var(--first-color);
 }
-.form-btn {
-    display: block;
-    width: 70%;
-    text-align: center;
-    margin: auto;
+.food-btns {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: calc(var(--m-3) + 32px) auto 0;
 }
-.btn-error {
-    color: var(--text-color);
-    text-decoration: underline;
-    transition: var(--transition);
-    -webkit-transition: var(--transition);
-    -moz-transition: var(--transition);
-    -ms-transition: var(--transition);
-    -o-transition: var(--transition);
-}
-.btn-error:hover {
-    color: var(--first-color);
+.food-btns a img {
+    width: 40px;
 }

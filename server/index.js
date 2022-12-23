@@ -4,12 +4,20 @@
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     Make sure to download the required modules
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
-const app = require("./app");
+const express = require("express");
 const mongoose = require("mongoose");
+const routes = require("./src/routes/router");
+const app = express();
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     This is for mongoose 7
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', true);
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Make sure to download the required modules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+app.use(routes);
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     Make the connection with Database
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
@@ -18,9 +26,10 @@ mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
-.then(() => {
-    console.log(`database connected`);
-    const port = app.get("port");
-    app.listen(port, () => {console.log(`the server is ${port}`)});
-})
+.then(() => console.log(`database connected`))
 .catch(err => console.log(err));
+const port = process.env.PORT || 8000;
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Define the server function that listens to requests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+app.listen(port, () => {console.log(`the server is ${port}`)});

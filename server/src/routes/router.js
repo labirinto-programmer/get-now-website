@@ -12,7 +12,10 @@ const routes = require("express").Router();
     Import the Post module
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
 const User = require("../models/users");
-const Data = require("../models/data");
+const Food = require("../models/food");
+const Favorite = require("../models/favorite");
+const Cart = require("../models/cart");
+const Coment = require("../models/coment");
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     For security keyword
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -45,6 +48,9 @@ routes.post("/users", async (req, res) => {
             name,
             email, 
             password: hashPassword(password),
+            favorite: User._id, 
+            coment: User._id, 
+            cart: User._id
         });
         await newUser.save();
         res.send(newUser);
@@ -53,46 +59,23 @@ routes.post("/users", async (req, res) => {
         res.send(err.message);
     }
 });
-
-routes.post("/data", async (req, res) => { 
-    const {id, 
-        foodName, 
-        description, 
-        imagePath, 
-        popularity, 
-        voteAverage, 
-        releaseDate,
-        kind,
-        flavor,
-        category,
-        price,
-        customerOpinion} = req.body;
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Show all food dosen't need to (authorization)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+routes.get("/food" , async (req, res) => { 
     try {
-        const newData = new Data({
-            id,
-            foodName, 
-            description,
-            imagePath,
-            popularity,
-            voteAverage,
-            releaseDate,
-            kind,
-            flavor,
-            category,
-            price,
-            customerOpinion,
-        });
-        await newData.save();
-        res.send(newData);
+        const showFood = await Food.find({});
+        res.send(showFood);
     } catch(err) {
-        res.status.Code = 400;
-        res.send(err.message);
-    }
+        res.status(500).json({
+            Error: error
+        });
+    };
 });
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Show all data
+    Show all favorite
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
-routes.get("/alldata" , (req, res) => { 
+routes.get("/favorite" , (req, res) => { 
     const token = req.headers.authorization;
     if(!token) {
         res.statusCode = 401;
@@ -108,13 +91,87 @@ routes.get("/alldata" , (req, res) => {
         return;
     }
     Jwt.verify(token, process.env.SECRET);
-    Data.find({})
+    Favorite.find({})
     .then(result => res.json(result))
     .catch(err => res.json({
         errMsg: err
     }));
 });
-
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Add a new favorite
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+routes.post("/addfavorite", async (req, res) => { 
+    const {
+        foodName, 
+        quantity, 
+        imagePath,
+        price} = req.body;
+    try {
+        const newFavorite = new Favorite({
+            foodName, 
+            quantity,
+            imagePath,
+            price,
+            user: User._id
+        });
+        await newFavorite.save();
+        res.send(newFavorite);
+    } catch(err) {
+        res.status.Code = 400;
+        res.send(err.message);
+    }
+});
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Add a new cart
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+routes.post("/addcart", async (req, res) => { 
+    const {
+        foodName, 
+        quantity, 
+        imagePath,
+        price} = req.body;
+    try {
+        const newCart = new Cart({
+            foodName, 
+            quantity,
+            imagePath,
+            price,
+            user: User._id
+        });
+        await newCart.save();
+        res.send(newCart);
+    } catch(err) {
+        res.status.Code = 400;
+        res.send(err.message);
+    }
+});
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Add a new coment
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+routes.post("/addcoment", async (req, res) => { 
+    const {
+        foodName, 
+        quantity, 
+        imagePath,
+        price} = req.body;
+    try {
+        const newComent = new Coment({
+            foodName, 
+            quantity,
+            imagePath,
+            price,
+            user: User._id
+        });
+        await newComent.save();
+        res.send(newComent);
+    } catch(err) {
+        res.status.Code = 400;
+        res.send(err.message);
+    }
+});
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    User sign in
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
 routes.post("/sing", async (req, res) => { 
     const {email, password} = req.body;
     const user = await User.findOne({email});

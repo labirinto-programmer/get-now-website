@@ -1,15 +1,14 @@
 /*===========================================
-    In this file, set up my user module
+    In this file, set up my food module
 ===========================================*/ 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     Import the mongoose library
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
 const {Schema, model} = require("mongoose");
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Start defining your user schema
+    Start defining your food schema
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
-const dataSchema = new Schema({
-    id: Number,
+const foodSchema = new Schema({
     foodName: String,
     description: String,
     imagePath: String,
@@ -19,14 +18,13 @@ const dataSchema = new Schema({
     kind: Array,
     flavor: Array,
     category: String,
-    price: String,
-    customerOpinion: Array,
+    price: String
 });
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Create  the user model
+    Create the food model
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
-const Data = model("Data", dataSchema);
+const Food = model("Food", foodSchema);
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     Export the module
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
-module.exports = Data;
+module.exports = Food;

@@ -17,17 +17,12 @@ const userSchema = new Schema({
         unique: true
     },
     password: String,
-    favorite: [
-            {
-                foodName: String,
-                description: String,
-                imagePath: String,
-                price: String
-            }
-        ]
+    favorite: {type: Schema.Types.ObjectId, ref: "Favorite"},
+    coment: {type: Schema.Types.ObjectId, ref: "Coment"},
+    cart: {type: Schema.Types.ObjectId, ref: "Cart"}
 });
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Create  the user model
+    Create the user model
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
 const User = model("User", userSchema);
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
